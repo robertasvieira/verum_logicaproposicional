@@ -291,9 +291,7 @@
 
                             <button type="submit" class="caderno-buttons" id="btnGuardar">Guardar</button>
                         </form>
-
                     </div>
-
                     
                 </div>
 

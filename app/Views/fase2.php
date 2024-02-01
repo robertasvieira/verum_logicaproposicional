@@ -348,7 +348,6 @@
             } else {
                 feedbackMensagem.innerHTML = 'Após sua resposta, Slughorn franze a testa, indicando ceticismo em relação à sua explicação.';
             }
-
         }
 
         function exibirAnotacao() {

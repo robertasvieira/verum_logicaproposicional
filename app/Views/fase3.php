@@ -234,18 +234,11 @@
                         <input type="hidden" name="id_questao" value="1">
                         <input type="hidden" name="opcao_correta" value="“Por meio de variáveis proposicionais, elementos indivisíveis da lógica como p, q, r… p1, p2, p3… e conectivos lógicos, que são símbolos que permitem construir novas fórmulas a partir de outras, como negação (¬), conjunção (∧), disjunção (∨), condicional (→), bicondicional (↔) e disjunção exclusiva (⊕).">
 
-                        <button type="button" class="alternativa" onclick="verificarResposta('“Por meio de variáveis proposicionais, elementos indivisíveis da lógica como p, q, r… p1, p2, p3… e conectivos lógicos, que são símbolos que permitem construir novas fórmulas a partir de outras, como negação (¬), conjunção (∧), disjunção (∨), bicondicional (→), condicional (↔) e disjunção exclusiva (⊕).”', this)">
-                        “Por meio de variáveis proposicionais, elementos indivisíveis da lógica como
-                        p, q, r… p1, p2, p3… e conectivos lógicos, que são símbolos que permitem construir novas fórmulas a partir de outras, 
-                        como negação (¬), conjunção (∧), disjunção (∨), bicondicional (→), condicional (↔) e disjunção exclusiva (⊕).”
-
-                        </button>
-
                         <button type="button" class="alternativa" onclick="verificarResposta(' “Por meio de variáveis proposicionais, elementos indivisíveis da lógica como p, q, r… p1, p2, p3… e conectivos lógicos, que são símbolos que permitem construir novas fórmulas a partir de outras, como negação (¬), disjunção (∧), conjunção (∨), condicional (→), bicondicional (↔) e disjunção exclusiva (⊕).”', this)">
                         “Por meio de variáveis proposicionais, elementos indivisíveis da lógica como
                         p, q, r… p1, p2, p3… e conectivos lógicos, que são símbolos que permitem construir novas fórmulas a partir de outras, 
                         como negação (¬), disjunção (∧), conjunção (∨), condicional (→), bicondicional (↔) e disjunção exclusiva (⊕).”
-
+                        </button>
 
                         <button type="button" class="alternativa" onclick="verificarResposta('“Por meio de variáveis proposicionais, elementos indivisíveis da lógica como p, q, r… p1, p2, p3… e conectivos lógicos, que são símbolos que permitem construir novas fórmulas a partir de outras, como negação (¬), conjunção (∧), disjunção (∨), condicional (→), bicondicional (↔) e disjunção exclusiva (⊕).”', this)">
                         “Por meio de variáveis proposicionais, elementos indivisíveis da lógica como
@@ -297,8 +290,7 @@
                             <button type="submit" class="caderno-buttons" id="btnGuardar">Guardar</button>
                         </form>
                     </div>
-
-                    
+  
                 </div>
 
                 <div class="caderno-buttons">
@@ -350,10 +342,10 @@
             var feedbackMensagem = document.getElementById('feedbackMensagem');
             var btnProsseguir = document.getElementById('btnProsseguir');
             if (respostaUsuario === '“Por meio de variáveis proposicionais, elementos indivisíveis da lógica como p, q, r… p1, p2, p3… e conectivos lógicos, que são símbolos que permitem construir novas fórmulas a partir de outras, como negação (¬), conjunção (∧), disjunção (∨), condicional (→), bicondicional (↔) e disjunção exclusiva (⊕).”') {
-                feedbackMensagem.innerHTML = 'compreender ';
+                feedbackMensagem.innerHTML = 'Slughorn exibe uma expressão de surpresa diante da clareza e detalhamento em sua explicação.';
                 btnProsseguir.style.display = 'block';
             } else {
-                feedbackMensagem.innerHTML = 'achar errado';
+                feedbackMensagem.innerHTML = 'Uma sombra de confusão paira sobre o rosto de Slughorn, sugerindo que alguns detalhes de sua explicação não se encaixaram perfeitamente. ';
             }
         }
 

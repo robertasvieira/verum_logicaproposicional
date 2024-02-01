@@ -252,10 +252,6 @@
                             p ∧ q
                         </button>
 
-                        <button type="button" class="alternativa" onclick="verificarResposta('p ∨ q', this)">
-                            p ∨ q
-                        </button>
-
                         <div id="feedbackMensagem"></div>
 
                         <div class="prosseguir-button">
@@ -300,7 +296,6 @@
                             <button type="submit" class="caderno-buttons" id="btnGuardar">Guardar</button>
                         </form>
                     </div>
-
                     
                 </div>
 
