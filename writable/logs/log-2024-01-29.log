@@ -1,0 +1,456 @@
+ERROR - 2024-01-29 03:07:44 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'verum' in C:\xampp\htdocs\verum\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 C:\xampp\htdocs\verum\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'verum', 3306, '', 0)
+#1 C:\xampp\htdocs\verum\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\verum\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\verum\system\Database\BaseBuilder.php(1613): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\verum\system\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\verum\system\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\verum\app\Models\AnotacoesModel.php(18): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\verum\app\Controllers\Fases.php(12): App\Models\AnotacoesModel->readAnotacao()
+#8 C:\xampp\htdocs\verum\system\CodeIgniter.php(941): App\Controllers\Fases->fase1()
+#9 C:\xampp\htdocs\verum\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Fases))
+#10 C:\xampp\htdocs\verum\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\verum\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'verum' in C:\xampp\htdocs\verum\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\xampp\htdocs\verum\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\verum\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\verum\system\Database\BaseBuilder.php(1613): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\verum\system\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\verum\system\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\xampp\htdocs\verum\app\Models\AnotacoesModel.php(18): CodeIgniter\BaseModel->findAll()
+#6 C:\xampp\htdocs\verum\app\Controllers\Fases.php(12): App\Models\AnotacoesModel->readAnotacao()
+#7 C:\xampp\htdocs\verum\system\CodeIgniter.php(941): App\Controllers\Fases->fase1()
+#8 C:\xampp\htdocs\verum\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Fases))
+#9 C:\xampp\htdocs\verum\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\verum\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2024-01-29 03:07:44 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'verum'
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1613): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `anotacoes`', [], false)
+ 3 SYSTEMPATH\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Models\AnotacoesModel.php(18): CodeIgniter\BaseModel->findAll()
+ 6 APPPATH\Controllers\Fases.php(12): App\Models\AnotacoesModel->readAnotacao()
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Fases->fase1()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Fases))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-29 04:24:45 --> ErrorException: Undefined variable $anotacao
+in APPPATH\Views\fase1.php on line 287.
+ 1 APPPATH\Views\fase1.php(287): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $anotacao', 'C:\\xampp\\htdocs\\verum\\app\\Views\\fase1.php', 287)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\verum\\app\\Views\\fase1.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('fase1', [], true)
+ 5 APPPATH\Controllers\Fases.php(14): view('fase1', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Fases->fase1()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Fases))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-29 04:26:14 --> ErrorException: Undefined variable $anotacao
+in APPPATH\Views\fase1.php on line 287.
+ 1 APPPATH\Views\fase1.php(287): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $anotacao', 'C:\\xampp\\htdocs\\verum\\app\\Views\\fase1.php', 287)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\verum\\app\\Views\\fase1.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('fase1', [], true)
+ 5 APPPATH\Controllers\Fases.php(14): view('fase1', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Fases->fase1()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Fases))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-29 04:26:17 --> ErrorException: Undefined variable $anotacao
+in APPPATH\Views\fase1.php on line 287.
+ 1 APPPATH\Views\fase1.php(287): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $anotacao', 'C:\\xampp\\htdocs\\verum\\app\\Views\\fase1.php', 287)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\verum\\app\\Views\\fase1.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('fase1', [], true)
+ 5 APPPATH\Controllers\Fases.php(14): view('fase1', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Fases->fase1()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Fases))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-29 04:27:02 --> ErrorException: Undefined variable $anotacao
+in APPPATH\Views\fase1.php on line 287.
+ 1 APPPATH\Views\fase1.php(287): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $anotacao', 'C:\\xampp\\htdocs\\verum\\app\\Views\\fase1.php', 287)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\verum\\app\\Views\\fase1.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('fase1', [], true)
+ 5 APPPATH\Controllers\Fases.php(14): view('fase1', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Fases->fase1()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Fases))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-29 04:27:03 --> ErrorException: Undefined variable $anotacao
+in APPPATH\Views\fase1.php on line 287.
+ 1 APPPATH\Views\fase1.php(287): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $anotacao', 'C:\\xampp\\htdocs\\verum\\app\\Views\\fase1.php', 287)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\verum\\app\\Views\\fase1.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('fase1', [], true)
+ 5 APPPATH\Controllers\Fases.php(14): view('fase1', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Fases->fase1()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Fases))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-29 04:27:03 --> ErrorException: Undefined variable $anotacao
+in APPPATH\Views\fase1.php on line 287.
+ 1 APPPATH\Views\fase1.php(287): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $anotacao', 'C:\\xampp\\htdocs\\verum\\app\\Views\\fase1.php', 287)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\verum\\app\\Views\\fase1.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('fase1', [], true)
+ 5 APPPATH\Controllers\Fases.php(14): view('fase1', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Fases->fase1()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Fases))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-29 04:38:29 --> ArgumentCountError: Too few arguments to function App\Controllers\Anotacoes::update(), 0 passed in C:\xampp\htdocs\verum\system\CodeIgniter.php on line 941 and exactly 1 expected
+in APPPATH\Controllers\Anotacoes.php on line 19.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Anotacoes->update()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anotacoes))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-29 04:39:47 --> CodeIgniter\Database\Exceptions\DataException: There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 1778.
+ 1 SYSTEMPATH\BaseModel.php(1778): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\BaseModel.php(956): CodeIgniter\BaseModel->transformDataToArray(null, 'update')
+ 3 SYSTEMPATH\Model.php(807): CodeIgniter\BaseModel->update([...], null)
+ 4 APPPATH\Models\AnotacoesModel.php(22): CodeIgniter\Model->update([...])
+ 5 APPPATH\Controllers\Anotacoes.php(26): App\Models\AnotacoesModel->updateAnotacao([...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Anotacoes->update()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anotacoes))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-29 04:43:27 --> CodeIgniter\Database\Exceptions\DataException: There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 1778.
+ 1 SYSTEMPATH\BaseModel.php(1778): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\BaseModel.php(956): CodeIgniter\BaseModel->transformDataToArray(null, 'update')
+ 3 SYSTEMPATH\Model.php(807): CodeIgniter\BaseModel->update([...], null)
+ 4 APPPATH\Models\AnotacoesModel.php(22): CodeIgniter\Model->update([...])
+ 5 APPPATH\Controllers\Anotacoes.php(26): App\Models\AnotacoesModel->updateAnotacao([...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Anotacoes->update()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anotacoes))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-29 04:43:29 --> CodeIgniter\Database\Exceptions\DataException: There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 1778.
+ 1 SYSTEMPATH\BaseModel.php(1778): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\BaseModel.php(956): CodeIgniter\BaseModel->transformDataToArray(null, 'update')
+ 3 SYSTEMPATH\Model.php(807): CodeIgniter\BaseModel->update([...], null)
+ 4 APPPATH\Models\AnotacoesModel.php(22): CodeIgniter\Model->update([...])
+ 5 APPPATH\Controllers\Anotacoes.php(26): App\Models\AnotacoesModel->updateAnotacao([...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Anotacoes->update()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anotacoes))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-29 04:43:29 --> CodeIgniter\Database\Exceptions\DataException: There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 1778.
+ 1 SYSTEMPATH\BaseModel.php(1778): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\BaseModel.php(956): CodeIgniter\BaseModel->transformDataToArray(null, 'update')
+ 3 SYSTEMPATH\Model.php(807): CodeIgniter\BaseModel->update([...], null)
+ 4 APPPATH\Models\AnotacoesModel.php(22): CodeIgniter\Model->update([...])
+ 5 APPPATH\Controllers\Anotacoes.php(26): App\Models\AnotacoesModel->updateAnotacao([...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Anotacoes->update()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anotacoes))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-29 04:46:35 --> CodeIgniter\Database\Exceptions\DataException: There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 1778.
+ 1 SYSTEMPATH\BaseModel.php(1778): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\BaseModel.php(956): CodeIgniter\BaseModel->transformDataToArray(null, 'update')
+ 3 SYSTEMPATH\Model.php(807): CodeIgniter\BaseModel->update([...], null)
+ 4 APPPATH\Models\AnotacoesModel.php(22): CodeIgniter\Model->update([...])
+ 5 APPPATH\Controllers\Anotacoes.php(26): App\Models\AnotacoesModel->updateAnotacao([...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Anotacoes->update()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anotacoes))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-29 04:49:04 --> CodeIgniter\Database\Exceptions\DataException: There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 1778.
+ 1 SYSTEMPATH\BaseModel.php(1778): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\BaseModel.php(956): CodeIgniter\BaseModel->transformDataToArray(null, 'update')
+ 3 SYSTEMPATH\Model.php(807): CodeIgniter\BaseModel->update([...], null)
+ 4 APPPATH\Models\AnotacoesModel.php(22): CodeIgniter\Model->update([...])
+ 5 APPPATH\Controllers\Anotacoes.php(26): App\Models\AnotacoesModel->updateAnotacao([...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Anotacoes->update()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anotacoes))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-29 04:49:05 --> CodeIgniter\Database\Exceptions\DataException: There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 1778.
+ 1 SYSTEMPATH\BaseModel.php(1778): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\BaseModel.php(956): CodeIgniter\BaseModel->transformDataToArray(null, 'update')
+ 3 SYSTEMPATH\Model.php(807): CodeIgniter\BaseModel->update([...], null)
+ 4 APPPATH\Models\AnotacoesModel.php(22): CodeIgniter\Model->update([...])
+ 5 APPPATH\Controllers\Anotacoes.php(26): App\Models\AnotacoesModel->updateAnotacao([...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Anotacoes->update()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anotacoes))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-29 04:49:05 --> CodeIgniter\Database\Exceptions\DataException: There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 1778.
+ 1 SYSTEMPATH\BaseModel.php(1778): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\BaseModel.php(956): CodeIgniter\BaseModel->transformDataToArray(null, 'update')
+ 3 SYSTEMPATH\Model.php(807): CodeIgniter\BaseModel->update([...], null)
+ 4 APPPATH\Models\AnotacoesModel.php(22): CodeIgniter\Model->update([...])
+ 5 APPPATH\Controllers\Anotacoes.php(26): App\Models\AnotacoesModel->updateAnotacao([...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Anotacoes->update()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anotacoes))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-29 04:49:08 --> CodeIgniter\Database\Exceptions\DataException: There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 1778.
+ 1 SYSTEMPATH\BaseModel.php(1778): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\BaseModel.php(956): CodeIgniter\BaseModel->transformDataToArray(null, 'update')
+ 3 SYSTEMPATH\Model.php(807): CodeIgniter\BaseModel->update([...], null)
+ 4 APPPATH\Models\AnotacoesModel.php(22): CodeIgniter\Model->update([...])
+ 5 APPPATH\Controllers\Anotacoes.php(26): App\Models\AnotacoesModel->updateAnotacao([...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Anotacoes->update()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anotacoes))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-29 04:50:42 --> CodeIgniter\Database\Exceptions\DataException: There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 1778.
+ 1 SYSTEMPATH\BaseModel.php(1778): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\BaseModel.php(956): CodeIgniter\BaseModel->transformDataToArray(null, 'update')
+ 3 SYSTEMPATH\Model.php(807): CodeIgniter\BaseModel->update([...], null)
+ 4 APPPATH\Models\AnotacoesModel.php(22): CodeIgniter\Model->update([...])
+ 5 APPPATH\Controllers\Anotacoes.php(26): App\Models\AnotacoesModel->updateAnotacao([...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Anotacoes->update()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anotacoes))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-29 04:52:11 --> ErrorException: Undefined variable $anotacao
+in APPPATH\Views\fase1.php on line 283.
+ 1 APPPATH\Views\fase1.php(283): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $anotacao', 'C:\\xampp\\htdocs\\verum\\app\\Views\\fase1.php', 283)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\verum\\app\\Views\\fase1.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('fase1', [], true)
+ 5 APPPATH\Controllers\Fases.php(14): view('fase1', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Fases->fase1()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Fases))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-29 04:55:48 --> ErrorException: Undefined variable $anotacao
+in APPPATH\Views\fase1.php on line 258.
+ 1 APPPATH\Views\fase1.php(258): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $anotacao', 'C:\\xampp\\htdocs\\verum\\app\\Views\\fase1.php', 258)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\verum\\app\\Views\\fase1.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('fase1', [], true)
+ 5 APPPATH\Controllers\Fases.php(14): view('fase1', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Fases->fase1()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Fases))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-29 04:57:49 --> ErrorException: Undefined variable $anotacao
+in APPPATH\Views\fase1.php on line 266.
+ 1 APPPATH\Views\fase1.php(266): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $anotacao', 'C:\\xampp\\htdocs\\verum\\app\\Views\\fase1.php', 266)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\verum\\app\\Views\\fase1.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('fase1', [], true)
+ 5 APPPATH\Controllers\Fases.php(14): view('fase1', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Fases->fase1()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Fases))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-29 04:58:59 --> ErrorException: Undefined variable $anotacao
+in APPPATH\Views\fase1.php on line 266.
+ 1 APPPATH\Views\fase1.php(266): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $anotacao', 'C:\\xampp\\htdocs\\verum\\app\\Views\\fase1.php', 266)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\verum\\app\\Views\\fase1.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('fase1', [], true)
+ 5 APPPATH\Controllers\Fases.php(14): view('fase1', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Fases->fase1()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Fases))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-29 04:59:00 --> ErrorException: Undefined variable $anotacao
+in APPPATH\Views\fase1.php on line 266.
+ 1 APPPATH\Views\fase1.php(266): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $anotacao', 'C:\\xampp\\htdocs\\verum\\app\\Views\\fase1.php', 266)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\verum\\app\\Views\\fase1.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('fase1', [], true)
+ 5 APPPATH\Controllers\Fases.php(14): view('fase1', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Fases->fase1()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Fases))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-29 04:59:00 --> ErrorException: Undefined variable $anotacao
+in APPPATH\Views\fase1.php on line 266.
+ 1 APPPATH\Views\fase1.php(266): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $anotacao', 'C:\\xampp\\htdocs\\verum\\app\\Views\\fase1.php', 266)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\verum\\app\\Views\\fase1.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('fase1', [], true)
+ 5 APPPATH\Controllers\Fases.php(14): view('fase1', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Fases->fase1()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Fases))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-29 04:59:38 --> ErrorException: Undefined variable $anotacao
+in APPPATH\Views\fase1.php on line 266.
+ 1 APPPATH\Views\fase1.php(266): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $anotacao', 'C:\\xampp\\htdocs\\verum\\app\\Views\\fase1.php', 266)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\verum\\app\\Views\\fase1.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('fase1', [], true)
+ 5 APPPATH\Controllers\Fases.php(14): view('fase1', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Fases->fase1()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Fases))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-29 05:06:27 --> ErrorException: Undefined variable $anotacao
+in APPPATH\Views\fase1.php on line 266.
+ 1 APPPATH\Views\fase1.php(266): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $anotacao', 'C:\\xampp\\htdocs\\verum\\app\\Views\\fase1.php', 266)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\verum\\app\\Views\\fase1.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('fase1', [], true)
+ 5 APPPATH\Controllers\Fases.php(14): view('fase1', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Fases->fase1()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Fases))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-29 17:43:34 --> ErrorException: Undefined variable $anotacao
+in APPPATH\Views\fase1.php on line 265.
+ 1 APPPATH\Views\fase1.php(265): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $anotacao', 'C:\\xampp\\htdocs\\verum\\app\\Views\\fase1.php', 265)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\verum\\app\\Views\\fase1.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('fase1', [], true)
+ 5 APPPATH\Controllers\Fases.php(14): view('fase1', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Fases->fase1()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Fases))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-29 17:45:02 --> ErrorException: Undefined variable $anotacao
+in APPPATH\Views\fase1.php on line 265.
+ 1 APPPATH\Views\fase1.php(265): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $anotacao', 'C:\\xampp\\htdocs\\verum\\app\\Views\\fase1.php', 265)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\verum\\app\\Views\\fase1.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('fase1', [], true)
+ 5 APPPATH\Controllers\Fases.php(14): view('fase1', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Fases->fase1()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Fases))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-29 17:45:03 --> ErrorException: Undefined variable $anotacao
+in APPPATH\Views\fase1.php on line 265.
+ 1 APPPATH\Views\fase1.php(265): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $anotacao', 'C:\\xampp\\htdocs\\verum\\app\\Views\\fase1.php', 265)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\verum\\app\\Views\\fase1.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('fase1', [], true)
+ 5 APPPATH\Controllers\Fases.php(14): view('fase1', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Fases->fase1()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Fases))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+DEBUG - 2024-01-29 18:16:42 --> Condição não satisfeita. Redirecionamento não executado.
+CRITICAL - 2024-01-29 18:27:18 --> ErrorException: Declaration of App\Models\AnotacoesModel::update() must be compatible with CodeIgniter\Model::update($id = null, $row = null): bool
+in APPPATH\Models\AnotacoesModel.php on line 21.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+DEBUG - 2024-01-29 18:28:00 --> Condição não satisfeita. Redirecionamento não executado.
+DEBUG - 2024-01-29 18:45:10 --> Condição não satisfeita. Redirecionamento não executado.
+DEBUG - 2024-01-29 18:56:03 --> Condição não satisfeita. Redirecionamento não executado.
+CRITICAL - 2024-01-29 19:34:23 --> ErrorException: Undefined variable $route
+in APPPATH\Config\Routes.php on line 13.
+ 1 APPPATH\Config\Routes.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $route', 'C:\\xampp\\htdocs\\verum\\app\\Config\\Routes.php', 13)
+ 2 SYSTEMPATH\Router\RouteCollection.php(344): require('C:\\xampp\\htdocs\\verum\\app\\Config\\Routes.php')
+ 3 SYSTEMPATH\CodeIgniter.php(810): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 4 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-29 19:41:14 --> ErrorException: Undefined variable $anotacao
+in APPPATH\Views\fase1.php on line 300.
+ 1 APPPATH\Views\fase1.php(300): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $anotacao', 'C:\\xampp\\htdocs\\verum\\app\\Views\\fase1.php', 300)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\verum\\app\\Views\\fase1.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('fase1', [], true)
+ 5 APPPATH\Controllers\Fases.php(14): view('fase1', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Fases->fase1()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Fases))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-29 19:44:17 --> ErrorException: Undefined variable $anotacao
+in APPPATH\Views\fase1.php on line 303.
+ 1 APPPATH\Views\fase1.php(303): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $anotacao', 'C:\\xampp\\htdocs\\verum\\app\\Views\\fase1.php', 303)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\verum\\app\\Views\\fase1.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('fase1', [], true)
+ 5 APPPATH\Controllers\Fases.php(14): view('fase1', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Fases->fase1()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Fases))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-29 19:44:21 --> ErrorException: Undefined variable $anotacao
+in APPPATH\Views\fase1.php on line 303.
+ 1 APPPATH\Views\fase1.php(303): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $anotacao', 'C:\\xampp\\htdocs\\verum\\app\\Views\\fase1.php', 303)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\verum\\app\\Views\\fase1.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('fase1', [], true)
+ 5 APPPATH\Controllers\Fases.php(14): view('fase1', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Fases->fase1()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Fases))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-29 19:45:03 --> ErrorException: Undefined variable $anotacao
+in APPPATH\Views\fase1.php on line 303.
+ 1 APPPATH\Views\fase1.php(303): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $anotacao', 'C:\\xampp\\htdocs\\verum\\app\\Views\\fase1.php', 303)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\verum\\app\\Views\\fase1.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('fase1', [], true)
+ 5 APPPATH\Controllers\Fases.php(14): view('fase1', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Fases->fase1()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Fases))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-29 19:45:10 --> ErrorException: Undefined variable $anotacao
+in APPPATH\Views\fase1.php on line 300.
+ 1 APPPATH\Views\fase1.php(300): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $anotacao', 'C:\\xampp\\htdocs\\verum\\app\\Views\\fase1.php', 300)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\verum\\app\\Views\\fase1.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('fase1', [], true)
+ 5 APPPATH\Controllers\Fases.php(14): view('fase1', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Fases->fase1()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Fases))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-29 19:45:12 --> ErrorException: Undefined variable $anotacao
+in APPPATH\Views\fase1.php on line 300.
+ 1 APPPATH\Views\fase1.php(300): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $anotacao', 'C:\\xampp\\htdocs\\verum\\app\\Views\\fase1.php', 300)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\verum\\app\\Views\\fase1.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('fase1', [], true)
+ 5 APPPATH\Controllers\Fases.php(14): view('fase1', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Fases->fase1()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Fases))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-29 23:03:34 --> ErrorException: Undefined property: App\Controllers\Anotacoes::$session
+in APPPATH\Controllers\Anotacoes.php on line 38.
+ 1 APPPATH\Controllers\Anotacoes.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Anotacoes::$session', 'C:\\xampp\\htdocs\\verum\\app\\Controllers\\Anotacoes.php', 38)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Anotacoes->delete('7')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anotacoes))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-29 23:08:03 --> ErrorException: Undefined property: App\Controllers\Anotacoes::$session
+in APPPATH\Controllers\Anotacoes.php on line 38.
+ 1 APPPATH\Controllers\Anotacoes.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Anotacoes::$session', 'C:\\xampp\\htdocs\\verum\\app\\Controllers\\Anotacoes.php', 38)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Anotacoes->delete('1')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anotacoes))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-29 23:14:04 --> ErrorException: Undefined property: App\Controllers\Anotacoes::$session
+in APPPATH\Controllers\Anotacoes.php on line 38.
+ 1 APPPATH\Controllers\Anotacoes.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Anotacoes::$session', 'C:\\xampp\\htdocs\\verum\\app\\Controllers\\Anotacoes.php', 38)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Anotacoes->delete('8')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anotacoes))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-29 23:16:19 --> ErrorException: Undefined property: App\Controllers\Anotacoes::$session
+in APPPATH\Controllers\Anotacoes.php on line 38.
+ 1 APPPATH\Controllers\Anotacoes.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Anotacoes::$session', 'C:\\xampp\\htdocs\\verum\\app\\Controllers\\Anotacoes.php', 38)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Anotacoes->delete('9')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anotacoes))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

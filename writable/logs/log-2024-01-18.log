@@ -1,0 +1,1055 @@
+ERROR - 2024-01-18 01:09:45 --> Error connecting to the database: ErrorException: mysqli::real_connect(): php_network_getaddresses: getaddrinfo for verum failed: Este host nï¿½o ï¿½ conhecido.  in C:\xampp\htdocs\verum\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'mysqli::real_co...', 'C:\\xampp\\htdocs...', 184)
+#1 C:\xampp\htdocs\verum\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('verum', 'root', Object(SensitiveParameterValue), '', 3306, '', 0)
+#2 C:\xampp\htdocs\verum\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#3 C:\xampp\htdocs\verum\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#4 C:\xampp\htdocs\verum\system\Database\BaseBuilder.php(2302): CodeIgniter\Database\BaseConnection->query('INSERT INTO `an...', Array, false)
+#5 C:\xampp\htdocs\verum\system\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+#6 C:\xampp\htdocs\verum\system\BaseModel.php(802): CodeIgniter\Model->doInsert(Array)
+#7 C:\xampp\htdocs\verum\system\Model.php(744): CodeIgniter\BaseModel->insert(Array, false)
+#8 C:\xampp\htdocs\verum\system\BaseModel.php(713): CodeIgniter\Model->insert(Array, false)
+#9 C:\xampp\htdocs\verum\app\Controllers\Anotacoes.php(33): CodeIgniter\BaseModel->save(Array)
+#10 C:\xampp\htdocs\verum\system\CodeIgniter.php(941): App\Controllers\Anotacoes->salvarAnotacao()
+#11 C:\xampp\htdocs\verum\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anotacoes))
+#12 C:\xampp\htdocs\verum\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 C:\xampp\htdocs\verum\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#14 {main}
+
+Next mysqli_sql_exception: php_network_getaddresses: getaddrinfo for verum failed: Este host não é conhecido.  in C:\xampp\htdocs\verum\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 C:\xampp\htdocs\verum\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('verum', 'root', Object(SensitiveParameterValue), '', 3306, '', 0)
+#1 C:\xampp\htdocs\verum\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\verum\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\verum\system\Database\BaseBuilder.php(2302): CodeIgniter\Database\BaseConnection->query('INSERT INTO `an...', Array, false)
+#4 C:\xampp\htdocs\verum\system\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\verum\system\BaseModel.php(802): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\verum\system\Model.php(744): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\xampp\htdocs\verum\system\BaseModel.php(713): CodeIgniter\Model->insert(Array, false)
+#8 C:\xampp\htdocs\verum\app\Controllers\Anotacoes.php(33): CodeIgniter\BaseModel->save(Array)
+#9 C:\xampp\htdocs\verum\system\CodeIgniter.php(941): App\Controllers\Anotacoes->salvarAnotacao()
+#10 C:\xampp\htdocs\verum\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anotacoes))
+#11 C:\xampp\htdocs\verum\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\verum\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: php_network_getaddresses: getaddrinfo for verum failed: Este host não é conhecido.  in C:\xampp\htdocs\verum\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\xampp\htdocs\verum\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\verum\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\verum\system\Database\BaseBuilder.php(2302): CodeIgniter\Database\BaseConnection->query('INSERT INTO `an...', Array, false)
+#3 C:\xampp\htdocs\verum\system\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+#4 C:\xampp\htdocs\verum\system\BaseModel.php(802): CodeIgniter\Model->doInsert(Array)
+#5 C:\xampp\htdocs\verum\system\Model.php(744): CodeIgniter\BaseModel->insert(Array, false)
+#6 C:\xampp\htdocs\verum\system\BaseModel.php(713): CodeIgniter\Model->insert(Array, false)
+#7 C:\xampp\htdocs\verum\app\Controllers\Anotacoes.php(33): CodeIgniter\BaseModel->save(Array)
+#8 C:\xampp\htdocs\verum\system\CodeIgniter.php(941): App\Controllers\Anotacoes->salvarAnotacao()
+#9 C:\xampp\htdocs\verum\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anotacoes))
+#10 C:\xampp\htdocs\verum\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\verum\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2024-01-18 01:09:45 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: php_network_getaddresses: getaddrinfo for verum failed: Este host não é conhecido. 
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(2302): CodeIgniter\Database\BaseConnection->query('INSERT INTO `anotacoes` (`conteudo`) VALUES (:conteudo:)', [...], false)
+ 3 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 4 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 5 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], false)
+ 6 SYSTEMPATH\BaseModel.php(713): CodeIgniter\Model->insert([...], false)
+ 7 APPPATH\Controllers\Anotacoes.php(33): CodeIgniter\BaseModel->save([...])
+ 8 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Anotacoes->salvarAnotacao()
+ 9 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anotacoes))
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-18 01:09:45 --> ErrorException: Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse JSON string. Error: Malformed UTF-8 characters, possibly incorrectly encoded in C:\xampp\htdocs\verum\system\Format\JSONFormatter.php:43
+Stack trace:
+#0 C:\xampp\htdocs\verum\system\Format\JSONFormatter.php(43): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Malformed UTF-8...')
+#1 C:\xampp\htdocs\verum\system\API\ResponseTrait.php(345): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\xampp\htdocs\verum\system\API\ResponseTrait.php(98): CodeIgniter\Debug\ExceptionHandler->format(Array)
+#3 C:\xampp\htdocs\verum\system\Debug\ExceptionHandler.php(81): CodeIgniter\Debug\ExceptionHandler->respond(Array, 500)
+#4 C:\xampp\htdocs\verum\system\Debug\Exceptions.php(156): CodeIgniter\Debug\ExceptionHandler->handle(Object(CodeIgniter\Database\Exceptions\DatabaseException), Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), 500, 8)
+#5 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Database\Exceptions\DatabaseException))
+#6 {main}
+  thrown
+ã€Previous Exceptionã€‘
+CodeIgniter\Database\Exceptions\DatabaseException
+Unable to connect to the database.
+Main connection [MySQLi]: php_network_getaddresses: getaddrinfo for verum failed: Este host não é conhecido. 
+#0 C:\xampp\htdocs\verum\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\verum\system\Database\BaseBuilder.php(2302): CodeIgniter\Database\BaseConnection->query('INSERT INTO `an...', Array, false)
+#2 C:\xampp\htdocs\verum\system\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+#3 C:\xampp\htdocs\verum\system\BaseModel.php(802): CodeIgniter\Model->doInsert(Array)
+#4 C:\xampp\htdocs\verum\system\Model.php(744): CodeIgniter\BaseModel->insert(Array, false)
+#5 C:\xampp\htdocs\verum\system\BaseModel.php(713): CodeIgniter\Model->insert(Array, false)
+#6 C:\xampp\htdocs\verum\app\Controllers\Anotacoes.php(33): CodeIgniter\BaseModel->save(Array)
+#7 C:\xampp\htdocs\verum\system\CodeIgniter.php(941): App\Controllers\Anotacoes->salvarAnotacao()
+#8 C:\xampp\htdocs\verum\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anotacoes))
+#9 C:\xampp\htdocs\verum\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\verum\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+in SYSTEMPATH\Format\JSONFormatter.php on line 43.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+ERROR - 2024-01-18 01:09:47 --> Error connecting to the database: ErrorException: mysqli::real_connect(): php_network_getaddresses: getaddrinfo for verum failed: Este host nï¿½o ï¿½ conhecido.  in C:\xampp\htdocs\verum\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'mysqli::real_co...', 'C:\\xampp\\htdocs...', 184)
+#1 C:\xampp\htdocs\verum\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('verum', 'root', Object(SensitiveParameterValue), '', 3306, '', 0)
+#2 C:\xampp\htdocs\verum\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#3 C:\xampp\htdocs\verum\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#4 C:\xampp\htdocs\verum\system\Database\BaseBuilder.php(2302): CodeIgniter\Database\BaseConnection->query('INSERT INTO `an...', Array, false)
+#5 C:\xampp\htdocs\verum\system\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+#6 C:\xampp\htdocs\verum\system\BaseModel.php(802): CodeIgniter\Model->doInsert(Array)
+#7 C:\xampp\htdocs\verum\system\Model.php(744): CodeIgniter\BaseModel->insert(Array, false)
+#8 C:\xampp\htdocs\verum\system\BaseModel.php(713): CodeIgniter\Model->insert(Array, false)
+#9 C:\xampp\htdocs\verum\app\Controllers\Anotacoes.php(33): CodeIgniter\BaseModel->save(Array)
+#10 C:\xampp\htdocs\verum\system\CodeIgniter.php(941): App\Controllers\Anotacoes->salvarAnotacao()
+#11 C:\xampp\htdocs\verum\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anotacoes))
+#12 C:\xampp\htdocs\verum\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 C:\xampp\htdocs\verum\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#14 {main}
+
+Next mysqli_sql_exception: php_network_getaddresses: getaddrinfo for verum failed: Este host não é conhecido.  in C:\xampp\htdocs\verum\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 C:\xampp\htdocs\verum\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('verum', 'root', Object(SensitiveParameterValue), '', 3306, '', 0)
+#1 C:\xampp\htdocs\verum\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\verum\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\verum\system\Database\BaseBuilder.php(2302): CodeIgniter\Database\BaseConnection->query('INSERT INTO `an...', Array, false)
+#4 C:\xampp\htdocs\verum\system\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\verum\system\BaseModel.php(802): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\verum\system\Model.php(744): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\xampp\htdocs\verum\system\BaseModel.php(713): CodeIgniter\Model->insert(Array, false)
+#8 C:\xampp\htdocs\verum\app\Controllers\Anotacoes.php(33): CodeIgniter\BaseModel->save(Array)
+#9 C:\xampp\htdocs\verum\system\CodeIgniter.php(941): App\Controllers\Anotacoes->salvarAnotacao()
+#10 C:\xampp\htdocs\verum\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anotacoes))
+#11 C:\xampp\htdocs\verum\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\verum\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: php_network_getaddresses: getaddrinfo for verum failed: Este host não é conhecido.  in C:\xampp\htdocs\verum\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\xampp\htdocs\verum\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\verum\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\verum\system\Database\BaseBuilder.php(2302): CodeIgniter\Database\BaseConnection->query('INSERT INTO `an...', Array, false)
+#3 C:\xampp\htdocs\verum\system\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+#4 C:\xampp\htdocs\verum\system\BaseModel.php(802): CodeIgniter\Model->doInsert(Array)
+#5 C:\xampp\htdocs\verum\system\Model.php(744): CodeIgniter\BaseModel->insert(Array, false)
+#6 C:\xampp\htdocs\verum\system\BaseModel.php(713): CodeIgniter\Model->insert(Array, false)
+#7 C:\xampp\htdocs\verum\app\Controllers\Anotacoes.php(33): CodeIgniter\BaseModel->save(Array)
+#8 C:\xampp\htdocs\verum\system\CodeIgniter.php(941): App\Controllers\Anotacoes->salvarAnotacao()
+#9 C:\xampp\htdocs\verum\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anotacoes))
+#10 C:\xampp\htdocs\verum\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\verum\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2024-01-18 01:09:47 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: php_network_getaddresses: getaddrinfo for verum failed: Este host não é conhecido. 
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(2302): CodeIgniter\Database\BaseConnection->query('INSERT INTO `anotacoes` (`conteudo`) VALUES (:conteudo:)', [...], false)
+ 3 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 4 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 5 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], false)
+ 6 SYSTEMPATH\BaseModel.php(713): CodeIgniter\Model->insert([...], false)
+ 7 APPPATH\Controllers\Anotacoes.php(33): CodeIgniter\BaseModel->save([...])
+ 8 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Anotacoes->salvarAnotacao()
+ 9 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anotacoes))
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-18 01:09:47 --> ErrorException: Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse JSON string. Error: Malformed UTF-8 characters, possibly incorrectly encoded in C:\xampp\htdocs\verum\system\Format\JSONFormatter.php:43
+Stack trace:
+#0 C:\xampp\htdocs\verum\system\Format\JSONFormatter.php(43): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Malformed UTF-8...')
+#1 C:\xampp\htdocs\verum\system\API\ResponseTrait.php(345): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\xampp\htdocs\verum\system\API\ResponseTrait.php(98): CodeIgniter\Debug\ExceptionHandler->format(Array)
+#3 C:\xampp\htdocs\verum\system\Debug\ExceptionHandler.php(81): CodeIgniter\Debug\ExceptionHandler->respond(Array, 500)
+#4 C:\xampp\htdocs\verum\system\Debug\Exceptions.php(156): CodeIgniter\Debug\ExceptionHandler->handle(Object(CodeIgniter\Database\Exceptions\DatabaseException), Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), 500, 8)
+#5 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Database\Exceptions\DatabaseException))
+#6 {main}
+  thrown
+ã€Previous Exceptionã€‘
+CodeIgniter\Database\Exceptions\DatabaseException
+Unable to connect to the database.
+Main connection [MySQLi]: php_network_getaddresses: getaddrinfo for verum failed: Este host não é conhecido. 
+#0 C:\xampp\htdocs\verum\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\verum\system\Database\BaseBuilder.php(2302): CodeIgniter\Database\BaseConnection->query('INSERT INTO `an...', Array, false)
+#2 C:\xampp\htdocs\verum\system\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+#3 C:\xampp\htdocs\verum\system\BaseModel.php(802): CodeIgniter\Model->doInsert(Array)
+#4 C:\xampp\htdocs\verum\system\Model.php(744): CodeIgniter\BaseModel->insert(Array, false)
+#5 C:\xampp\htdocs\verum\system\BaseModel.php(713): CodeIgniter\Model->insert(Array, false)
+#6 C:\xampp\htdocs\verum\app\Controllers\Anotacoes.php(33): CodeIgniter\BaseModel->save(Array)
+#7 C:\xampp\htdocs\verum\system\CodeIgniter.php(941): App\Controllers\Anotacoes->salvarAnotacao()
+#8 C:\xampp\htdocs\verum\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anotacoes))
+#9 C:\xampp\htdocs\verum\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\verum\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+in SYSTEMPATH\Format\JSONFormatter.php on line 43.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+ERROR - 2024-01-18 01:12:54 --> Error connecting to the database: ErrorException: mysqli::real_connect(): php_network_getaddresses: getaddrinfo for verum failed: Este host nï¿½o ï¿½ conhecido.  in C:\xampp\htdocs\verum\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'mysqli::real_co...', 'C:\\xampp\\htdocs...', 184)
+#1 C:\xampp\htdocs\verum\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('verum', 'root', Object(SensitiveParameterValue), '', 3306, '', 0)
+#2 C:\xampp\htdocs\verum\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#3 C:\xampp\htdocs\verum\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#4 C:\xampp\htdocs\verum\system\Database\BaseBuilder.php(2302): CodeIgniter\Database\BaseConnection->query('INSERT INTO `an...', Array, false)
+#5 C:\xampp\htdocs\verum\system\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+#6 C:\xampp\htdocs\verum\system\BaseModel.php(802): CodeIgniter\Model->doInsert(Array)
+#7 C:\xampp\htdocs\verum\system\Model.php(744): CodeIgniter\BaseModel->insert(Array, false)
+#8 C:\xampp\htdocs\verum\system\BaseModel.php(713): CodeIgniter\Model->insert(Array, false)
+#9 C:\xampp\htdocs\verum\app\Controllers\Anotacoes.php(33): CodeIgniter\BaseModel->save(Array)
+#10 C:\xampp\htdocs\verum\system\CodeIgniter.php(941): App\Controllers\Anotacoes->salvarAnotacao()
+#11 C:\xampp\htdocs\verum\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anotacoes))
+#12 C:\xampp\htdocs\verum\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 C:\xampp\htdocs\verum\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#14 {main}
+
+Next mysqli_sql_exception: php_network_getaddresses: getaddrinfo for verum failed: Este host não é conhecido.  in C:\xampp\htdocs\verum\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 C:\xampp\htdocs\verum\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('verum', 'root', Object(SensitiveParameterValue), '', 3306, '', 0)
+#1 C:\xampp\htdocs\verum\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\verum\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\verum\system\Database\BaseBuilder.php(2302): CodeIgniter\Database\BaseConnection->query('INSERT INTO `an...', Array, false)
+#4 C:\xampp\htdocs\verum\system\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\verum\system\BaseModel.php(802): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\verum\system\Model.php(744): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\xampp\htdocs\verum\system\BaseModel.php(713): CodeIgniter\Model->insert(Array, false)
+#8 C:\xampp\htdocs\verum\app\Controllers\Anotacoes.php(33): CodeIgniter\BaseModel->save(Array)
+#9 C:\xampp\htdocs\verum\system\CodeIgniter.php(941): App\Controllers\Anotacoes->salvarAnotacao()
+#10 C:\xampp\htdocs\verum\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anotacoes))
+#11 C:\xampp\htdocs\verum\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\verum\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: php_network_getaddresses: getaddrinfo for verum failed: Este host não é conhecido.  in C:\xampp\htdocs\verum\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\xampp\htdocs\verum\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\verum\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\verum\system\Database\BaseBuilder.php(2302): CodeIgniter\Database\BaseConnection->query('INSERT INTO `an...', Array, false)
+#3 C:\xampp\htdocs\verum\system\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+#4 C:\xampp\htdocs\verum\system\BaseModel.php(802): CodeIgniter\Model->doInsert(Array)
+#5 C:\xampp\htdocs\verum\system\Model.php(744): CodeIgniter\BaseModel->insert(Array, false)
+#6 C:\xampp\htdocs\verum\system\BaseModel.php(713): CodeIgniter\Model->insert(Array, false)
+#7 C:\xampp\htdocs\verum\app\Controllers\Anotacoes.php(33): CodeIgniter\BaseModel->save(Array)
+#8 C:\xampp\htdocs\verum\system\CodeIgniter.php(941): App\Controllers\Anotacoes->salvarAnotacao()
+#9 C:\xampp\htdocs\verum\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anotacoes))
+#10 C:\xampp\htdocs\verum\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\verum\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2024-01-18 01:12:54 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: php_network_getaddresses: getaddrinfo for verum failed: Este host não é conhecido. 
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(2302): CodeIgniter\Database\BaseConnection->query('INSERT INTO `anotacoes` (`conteudo`) VALUES (:conteudo:)', [...], false)
+ 3 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 4 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 5 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], false)
+ 6 SYSTEMPATH\BaseModel.php(713): CodeIgniter\Model->insert([...], false)
+ 7 APPPATH\Controllers\Anotacoes.php(33): CodeIgniter\BaseModel->save([...])
+ 8 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Anotacoes->salvarAnotacao()
+ 9 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anotacoes))
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-18 01:12:54 --> ErrorException: Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse JSON string. Error: Malformed UTF-8 characters, possibly incorrectly encoded in C:\xampp\htdocs\verum\system\Format\JSONFormatter.php:43
+Stack trace:
+#0 C:\xampp\htdocs\verum\system\Format\JSONFormatter.php(43): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Malformed UTF-8...')
+#1 C:\xampp\htdocs\verum\system\API\ResponseTrait.php(345): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\xampp\htdocs\verum\system\API\ResponseTrait.php(98): CodeIgniter\Debug\ExceptionHandler->format(Array)
+#3 C:\xampp\htdocs\verum\system\Debug\ExceptionHandler.php(81): CodeIgniter\Debug\ExceptionHandler->respond(Array, 500)
+#4 C:\xampp\htdocs\verum\system\Debug\Exceptions.php(156): CodeIgniter\Debug\ExceptionHandler->handle(Object(CodeIgniter\Database\Exceptions\DatabaseException), Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), 500, 8)
+#5 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Database\Exceptions\DatabaseException))
+#6 {main}
+  thrown
+ã€Previous Exceptionã€‘
+CodeIgniter\Database\Exceptions\DatabaseException
+Unable to connect to the database.
+Main connection [MySQLi]: php_network_getaddresses: getaddrinfo for verum failed: Este host não é conhecido. 
+#0 C:\xampp\htdocs\verum\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\verum\system\Database\BaseBuilder.php(2302): CodeIgniter\Database\BaseConnection->query('INSERT INTO `an...', Array, false)
+#2 C:\xampp\htdocs\verum\system\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+#3 C:\xampp\htdocs\verum\system\BaseModel.php(802): CodeIgniter\Model->doInsert(Array)
+#4 C:\xampp\htdocs\verum\system\Model.php(744): CodeIgniter\BaseModel->insert(Array, false)
+#5 C:\xampp\htdocs\verum\system\BaseModel.php(713): CodeIgniter\Model->insert(Array, false)
+#6 C:\xampp\htdocs\verum\app\Controllers\Anotacoes.php(33): CodeIgniter\BaseModel->save(Array)
+#7 C:\xampp\htdocs\verum\system\CodeIgniter.php(941): App\Controllers\Anotacoes->salvarAnotacao()
+#8 C:\xampp\htdocs\verum\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anotacoes))
+#9 C:\xampp\htdocs\verum\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\verum\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+in SYSTEMPATH\Format\JSONFormatter.php on line 43.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-01-18 01:57:31 --> Error: Class "App\Controllers\AnotacaoModel" not found
+in APPPATH\Controllers\Anotacoes.php on line 32.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Anotacoes->criarAnotacao()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anotacoes))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-18 02:00:00 --> Error connecting to the database: ErrorException: mysqli::real_connect(): php_network_getaddresses: getaddrinfo for verum failed: Este host nï¿½o ï¿½ conhecido.  in C:\xampp\htdocs\verum\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'mysqli::real_co...', 'C:\\xampp\\htdocs...', 184)
+#1 C:\xampp\htdocs\verum\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('verum', 'root', Object(SensitiveParameterValue), '', 3306, '', 0)
+#2 C:\xampp\htdocs\verum\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#3 C:\xampp\htdocs\verum\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#4 C:\xampp\htdocs\verum\system\Database\BaseBuilder.php(2302): CodeIgniter\Database\BaseConnection->query('INSERT INTO `an...', Array, false)
+#5 C:\xampp\htdocs\verum\system\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+#6 C:\xampp\htdocs\verum\system\BaseModel.php(802): CodeIgniter\Model->doInsert(Array)
+#7 C:\xampp\htdocs\verum\system\Model.php(744): CodeIgniter\BaseModel->insert(Array, true)
+#8 C:\xampp\htdocs\verum\app\Models\AnotacoesModel.php(23): CodeIgniter\Model->insert(Array)
+#9 C:\xampp\htdocs\verum\app\Controllers\Anotacoes.php(40): App\Models\AnotacoesModel->criarAnotacao(Array)
+#10 C:\xampp\htdocs\verum\system\CodeIgniter.php(941): App\Controllers\Anotacoes->criarAnotacao()
+#11 C:\xampp\htdocs\verum\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anotacoes))
+#12 C:\xampp\htdocs\verum\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 C:\xampp\htdocs\verum\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#14 {main}
+
+Next mysqli_sql_exception: php_network_getaddresses: getaddrinfo for verum failed: Este host não é conhecido.  in C:\xampp\htdocs\verum\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 C:\xampp\htdocs\verum\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('verum', 'root', Object(SensitiveParameterValue), '', 3306, '', 0)
+#1 C:\xampp\htdocs\verum\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\verum\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\verum\system\Database\BaseBuilder.php(2302): CodeIgniter\Database\BaseConnection->query('INSERT INTO `an...', Array, false)
+#4 C:\xampp\htdocs\verum\system\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\verum\system\BaseModel.php(802): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\verum\system\Model.php(744): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\verum\app\Models\AnotacoesModel.php(23): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\verum\app\Controllers\Anotacoes.php(40): App\Models\AnotacoesModel->criarAnotacao(Array)
+#9 C:\xampp\htdocs\verum\system\CodeIgniter.php(941): App\Controllers\Anotacoes->criarAnotacao()
+#10 C:\xampp\htdocs\verum\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anotacoes))
+#11 C:\xampp\htdocs\verum\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\verum\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: php_network_getaddresses: getaddrinfo for verum failed: Este host não é conhecido.  in C:\xampp\htdocs\verum\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\xampp\htdocs\verum\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\verum\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\verum\system\Database\BaseBuilder.php(2302): CodeIgniter\Database\BaseConnection->query('INSERT INTO `an...', Array, false)
+#3 C:\xampp\htdocs\verum\system\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+#4 C:\xampp\htdocs\verum\system\BaseModel.php(802): CodeIgniter\Model->doInsert(Array)
+#5 C:\xampp\htdocs\verum\system\Model.php(744): CodeIgniter\BaseModel->insert(Array, true)
+#6 C:\xampp\htdocs\verum\app\Models\AnotacoesModel.php(23): CodeIgniter\Model->insert(Array)
+#7 C:\xampp\htdocs\verum\app\Controllers\Anotacoes.php(40): App\Models\AnotacoesModel->criarAnotacao(Array)
+#8 C:\xampp\htdocs\verum\system\CodeIgniter.php(941): App\Controllers\Anotacoes->criarAnotacao()
+#9 C:\xampp\htdocs\verum\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anotacoes))
+#10 C:\xampp\htdocs\verum\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\verum\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2024-01-18 02:00:00 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: php_network_getaddresses: getaddrinfo for verum failed: Este host não é conhecido. 
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(2302): CodeIgniter\Database\BaseConnection->query('INSERT INTO `anotacoes` (`conteudo`) VALUES (:conteudo:)', [...], false)
+ 3 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 4 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 5 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], true)
+ 6 APPPATH\Models\AnotacoesModel.php(23): CodeIgniter\Model->insert([...])
+ 7 APPPATH\Controllers\Anotacoes.php(40): App\Models\AnotacoesModel->criarAnotacao([...])
+ 8 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Anotacoes->criarAnotacao()
+ 9 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anotacoes))
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-18 02:17:59 --> Error connecting to the database: ErrorException: mysqli::real_connect(): php_network_getaddresses: getaddrinfo for verum failed: Este host nï¿½o ï¿½ conhecido.  in C:\xampp\htdocs\verum\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'mysqli::real_co...', 'C:\\xampp\\htdocs...', 184)
+#1 C:\xampp\htdocs\verum\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('verum', 'root', Object(SensitiveParameterValue), '', 3306, '', 0)
+#2 C:\xampp\htdocs\verum\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#3 C:\xampp\htdocs\verum\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#4 C:\xampp\htdocs\verum\system\Database\BaseBuilder.php(2302): CodeIgniter\Database\BaseConnection->query('INSERT INTO `an...', Array, false)
+#5 C:\xampp\htdocs\verum\system\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+#6 C:\xampp\htdocs\verum\system\BaseModel.php(802): CodeIgniter\Model->doInsert(Array)
+#7 C:\xampp\htdocs\verum\system\Model.php(744): CodeIgniter\BaseModel->insert(Array, true)
+#8 C:\xampp\htdocs\verum\app\Models\AnotacoesModel.php(14): CodeIgniter\Model->insert(Array)
+#9 C:\xampp\htdocs\verum\app\Controllers\Anotacoes.php(20): App\Models\AnotacoesModel->createAnotacao(Array)
+#10 C:\xampp\htdocs\verum\system\CodeIgniter.php(941): App\Controllers\Anotacoes->create()
+#11 C:\xampp\htdocs\verum\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anotacoes))
+#12 C:\xampp\htdocs\verum\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 C:\xampp\htdocs\verum\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#14 {main}
+
+Next mysqli_sql_exception: php_network_getaddresses: getaddrinfo for verum failed: Este host não é conhecido.  in C:\xampp\htdocs\verum\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 C:\xampp\htdocs\verum\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('verum', 'root', Object(SensitiveParameterValue), '', 3306, '', 0)
+#1 C:\xampp\htdocs\verum\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\verum\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\verum\system\Database\BaseBuilder.php(2302): CodeIgniter\Database\BaseConnection->query('INSERT INTO `an...', Array, false)
+#4 C:\xampp\htdocs\verum\system\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\verum\system\BaseModel.php(802): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\verum\system\Model.php(744): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\verum\app\Models\AnotacoesModel.php(14): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\verum\app\Controllers\Anotacoes.php(20): App\Models\AnotacoesModel->createAnotacao(Array)
+#9 C:\xampp\htdocs\verum\system\CodeIgniter.php(941): App\Controllers\Anotacoes->create()
+#10 C:\xampp\htdocs\verum\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anotacoes))
+#11 C:\xampp\htdocs\verum\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\verum\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: php_network_getaddresses: getaddrinfo for verum failed: Este host não é conhecido.  in C:\xampp\htdocs\verum\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\xampp\htdocs\verum\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\verum\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\verum\system\Database\BaseBuilder.php(2302): CodeIgniter\Database\BaseConnection->query('INSERT INTO `an...', Array, false)
+#3 C:\xampp\htdocs\verum\system\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+#4 C:\xampp\htdocs\verum\system\BaseModel.php(802): CodeIgniter\Model->doInsert(Array)
+#5 C:\xampp\htdocs\verum\system\Model.php(744): CodeIgniter\BaseModel->insert(Array, true)
+#6 C:\xampp\htdocs\verum\app\Models\AnotacoesModel.php(14): CodeIgniter\Model->insert(Array)
+#7 C:\xampp\htdocs\verum\app\Controllers\Anotacoes.php(20): App\Models\AnotacoesModel->createAnotacao(Array)
+#8 C:\xampp\htdocs\verum\system\CodeIgniter.php(941): App\Controllers\Anotacoes->create()
+#9 C:\xampp\htdocs\verum\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anotacoes))
+#10 C:\xampp\htdocs\verum\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\verum\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2024-01-18 02:17:59 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: php_network_getaddresses: getaddrinfo for verum failed: Este host não é conhecido. 
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(2302): CodeIgniter\Database\BaseConnection->query('INSERT INTO `anotacoes` (`titulo`, `conteudo`) VALUES (:titulo:, :conteudo:)', [...], false)
+ 3 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 4 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 5 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], true)
+ 6 APPPATH\Models\AnotacoesModel.php(14): CodeIgniter\Model->insert([...])
+ 7 APPPATH\Controllers\Anotacoes.php(20): App\Models\AnotacoesModel->createAnotacao([...])
+ 8 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Anotacoes->create()
+ 9 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anotacoes))
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-18 02:20:18 --> Error connecting to the database: ErrorException: mysqli::real_connect(): php_network_getaddresses: getaddrinfo for verum failed: Este host nï¿½o ï¿½ conhecido.  in C:\xampp\htdocs\verum\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'mysqli::real_co...', 'C:\\xampp\\htdocs...', 184)
+#1 C:\xampp\htdocs\verum\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('verum', 'root', Object(SensitiveParameterValue), '', 3306, '', 0)
+#2 C:\xampp\htdocs\verum\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#3 C:\xampp\htdocs\verum\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#4 C:\xampp\htdocs\verum\system\Database\BaseBuilder.php(2302): CodeIgniter\Database\BaseConnection->query('INSERT INTO `an...', Array, false)
+#5 C:\xampp\htdocs\verum\system\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+#6 C:\xampp\htdocs\verum\system\BaseModel.php(802): CodeIgniter\Model->doInsert(Array)
+#7 C:\xampp\htdocs\verum\system\Model.php(744): CodeIgniter\BaseModel->insert(Array, true)
+#8 C:\xampp\htdocs\verum\app\Models\AnotacoesModel.php(14): CodeIgniter\Model->insert(Array)
+#9 C:\xampp\htdocs\verum\app\Controllers\Anotacoes.php(20): App\Models\AnotacoesModel->createAnotacao(Array)
+#10 C:\xampp\htdocs\verum\system\CodeIgniter.php(941): App\Controllers\Anotacoes->create()
+#11 C:\xampp\htdocs\verum\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anotacoes))
+#12 C:\xampp\htdocs\verum\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 C:\xampp\htdocs\verum\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#14 {main}
+
+Next mysqli_sql_exception: php_network_getaddresses: getaddrinfo for verum failed: Este host não é conhecido.  in C:\xampp\htdocs\verum\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 C:\xampp\htdocs\verum\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('verum', 'root', Object(SensitiveParameterValue), '', 3306, '', 0)
+#1 C:\xampp\htdocs\verum\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\verum\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\verum\system\Database\BaseBuilder.php(2302): CodeIgniter\Database\BaseConnection->query('INSERT INTO `an...', Array, false)
+#4 C:\xampp\htdocs\verum\system\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\verum\system\BaseModel.php(802): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\verum\system\Model.php(744): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\verum\app\Models\AnotacoesModel.php(14): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\verum\app\Controllers\Anotacoes.php(20): App\Models\AnotacoesModel->createAnotacao(Array)
+#9 C:\xampp\htdocs\verum\system\CodeIgniter.php(941): App\Controllers\Anotacoes->create()
+#10 C:\xampp\htdocs\verum\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anotacoes))
+#11 C:\xampp\htdocs\verum\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\verum\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: php_network_getaddresses: getaddrinfo for verum failed: Este host não é conhecido.  in C:\xampp\htdocs\verum\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\xampp\htdocs\verum\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\verum\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\verum\system\Database\BaseBuilder.php(2302): CodeIgniter\Database\BaseConnection->query('INSERT INTO `an...', Array, false)
+#3 C:\xampp\htdocs\verum\system\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+#4 C:\xampp\htdocs\verum\system\BaseModel.php(802): CodeIgniter\Model->doInsert(Array)
+#5 C:\xampp\htdocs\verum\system\Model.php(744): CodeIgniter\BaseModel->insert(Array, true)
+#6 C:\xampp\htdocs\verum\app\Models\AnotacoesModel.php(14): CodeIgniter\Model->insert(Array)
+#7 C:\xampp\htdocs\verum\app\Controllers\Anotacoes.php(20): App\Models\AnotacoesModel->createAnotacao(Array)
+#8 C:\xampp\htdocs\verum\system\CodeIgniter.php(941): App\Controllers\Anotacoes->create()
+#9 C:\xampp\htdocs\verum\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anotacoes))
+#10 C:\xampp\htdocs\verum\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\verum\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2024-01-18 02:20:18 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: php_network_getaddresses: getaddrinfo for verum failed: Este host não é conhecido. 
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(2302): CodeIgniter\Database\BaseConnection->query('INSERT INTO `anotacoes` (`titulo`, `conteudo`) VALUES (:titulo:, :conteudo:)', [...], false)
+ 3 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 4 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 5 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], true)
+ 6 APPPATH\Models\AnotacoesModel.php(14): CodeIgniter\Model->insert([...])
+ 7 APPPATH\Controllers\Anotacoes.php(20): App\Models\AnotacoesModel->createAnotacao([...])
+ 8 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Anotacoes->create()
+ 9 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anotacoes))
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-18 02:22:08 --> Error connecting to the database: ErrorException: mysqli::real_connect(): php_network_getaddresses: getaddrinfo for verum failed: Este host nï¿½o ï¿½ conhecido.  in C:\xampp\htdocs\verum\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'mysqli::real_co...', 'C:\\xampp\\htdocs...', 184)
+#1 C:\xampp\htdocs\verum\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('verum', 'root', Object(SensitiveParameterValue), '', 3306, '', 0)
+#2 C:\xampp\htdocs\verum\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#3 C:\xampp\htdocs\verum\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#4 C:\xampp\htdocs\verum\system\Database\BaseBuilder.php(2302): CodeIgniter\Database\BaseConnection->query('INSERT INTO `an...', Array, false)
+#5 C:\xampp\htdocs\verum\system\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+#6 C:\xampp\htdocs\verum\system\BaseModel.php(802): CodeIgniter\Model->doInsert(Array)
+#7 C:\xampp\htdocs\verum\system\Model.php(744): CodeIgniter\BaseModel->insert(Array, true)
+#8 C:\xampp\htdocs\verum\app\Models\AnotacoesModel.php(14): CodeIgniter\Model->insert(Array)
+#9 C:\xampp\htdocs\verum\app\Controllers\Anotacoes.php(18): App\Models\AnotacoesModel->createAnotacao(Array)
+#10 C:\xampp\htdocs\verum\system\CodeIgniter.php(941): App\Controllers\Anotacoes->create()
+#11 C:\xampp\htdocs\verum\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anotacoes))
+#12 C:\xampp\htdocs\verum\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 C:\xampp\htdocs\verum\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#14 {main}
+
+Next mysqli_sql_exception: php_network_getaddresses: getaddrinfo for verum failed: Este host não é conhecido.  in C:\xampp\htdocs\verum\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 C:\xampp\htdocs\verum\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('verum', 'root', Object(SensitiveParameterValue), '', 3306, '', 0)
+#1 C:\xampp\htdocs\verum\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\verum\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\verum\system\Database\BaseBuilder.php(2302): CodeIgniter\Database\BaseConnection->query('INSERT INTO `an...', Array, false)
+#4 C:\xampp\htdocs\verum\system\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\verum\system\BaseModel.php(802): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\verum\system\Model.php(744): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\verum\app\Models\AnotacoesModel.php(14): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\verum\app\Controllers\Anotacoes.php(18): App\Models\AnotacoesModel->createAnotacao(Array)
+#9 C:\xampp\htdocs\verum\system\CodeIgniter.php(941): App\Controllers\Anotacoes->create()
+#10 C:\xampp\htdocs\verum\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anotacoes))
+#11 C:\xampp\htdocs\verum\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\verum\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: php_network_getaddresses: getaddrinfo for verum failed: Este host não é conhecido.  in C:\xampp\htdocs\verum\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\xampp\htdocs\verum\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\verum\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\verum\system\Database\BaseBuilder.php(2302): CodeIgniter\Database\BaseConnection->query('INSERT INTO `an...', Array, false)
+#3 C:\xampp\htdocs\verum\system\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+#4 C:\xampp\htdocs\verum\system\BaseModel.php(802): CodeIgniter\Model->doInsert(Array)
+#5 C:\xampp\htdocs\verum\system\Model.php(744): CodeIgniter\BaseModel->insert(Array, true)
+#6 C:\xampp\htdocs\verum\app\Models\AnotacoesModel.php(14): CodeIgniter\Model->insert(Array)
+#7 C:\xampp\htdocs\verum\app\Controllers\Anotacoes.php(18): App\Models\AnotacoesModel->createAnotacao(Array)
+#8 C:\xampp\htdocs\verum\system\CodeIgniter.php(941): App\Controllers\Anotacoes->create()
+#9 C:\xampp\htdocs\verum\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anotacoes))
+#10 C:\xampp\htdocs\verum\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\verum\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2024-01-18 02:22:08 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: php_network_getaddresses: getaddrinfo for verum failed: Este host não é conhecido. 
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(2302): CodeIgniter\Database\BaseConnection->query('INSERT INTO `anotacoes` (`titulo`, `conteudo`) VALUES (:titulo:, :conteudo:)', [...], false)
+ 3 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 4 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 5 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], true)
+ 6 APPPATH\Models\AnotacoesModel.php(14): CodeIgniter\Model->insert([...])
+ 7 APPPATH\Controllers\Anotacoes.php(18): App\Models\AnotacoesModel->createAnotacao([...])
+ 8 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Anotacoes->create()
+ 9 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anotacoes))
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-18 02:23:50 --> Error connecting to the database: ErrorException: mysqli::real_connect(): php_network_getaddresses: getaddrinfo for verum failed: Este host nï¿½o ï¿½ conhecido.  in C:\xampp\htdocs\verum\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'mysqli::real_co...', 'C:\\xampp\\htdocs...', 184)
+#1 C:\xampp\htdocs\verum\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('verum', 'root', Object(SensitiveParameterValue), '', 3306, '', 0)
+#2 C:\xampp\htdocs\verum\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#3 C:\xampp\htdocs\verum\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#4 C:\xampp\htdocs\verum\system\Database\BaseBuilder.php(2302): CodeIgniter\Database\BaseConnection->query('INSERT INTO `an...', Array, false)
+#5 C:\xampp\htdocs\verum\system\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+#6 C:\xampp\htdocs\verum\system\BaseModel.php(802): CodeIgniter\Model->doInsert(Array)
+#7 C:\xampp\htdocs\verum\system\Model.php(744): CodeIgniter\BaseModel->insert(Array, true)
+#8 C:\xampp\htdocs\verum\app\Models\AnotacoesModel.php(14): CodeIgniter\Model->insert(Array)
+#9 C:\xampp\htdocs\verum\app\Controllers\Anotacoes.php(18): App\Models\AnotacoesModel->createAnotacao(Array)
+#10 C:\xampp\htdocs\verum\system\CodeIgniter.php(941): App\Controllers\Anotacoes->create()
+#11 C:\xampp\htdocs\verum\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anotacoes))
+#12 C:\xampp\htdocs\verum\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 C:\xampp\htdocs\verum\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#14 {main}
+
+Next mysqli_sql_exception: php_network_getaddresses: getaddrinfo for verum failed: Este host não é conhecido.  in C:\xampp\htdocs\verum\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 C:\xampp\htdocs\verum\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('verum', 'root', Object(SensitiveParameterValue), '', 3306, '', 0)
+#1 C:\xampp\htdocs\verum\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\verum\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\verum\system\Database\BaseBuilder.php(2302): CodeIgniter\Database\BaseConnection->query('INSERT INTO `an...', Array, false)
+#4 C:\xampp\htdocs\verum\system\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\verum\system\BaseModel.php(802): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\verum\system\Model.php(744): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\verum\app\Models\AnotacoesModel.php(14): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\verum\app\Controllers\Anotacoes.php(18): App\Models\AnotacoesModel->createAnotacao(Array)
+#9 C:\xampp\htdocs\verum\system\CodeIgniter.php(941): App\Controllers\Anotacoes->create()
+#10 C:\xampp\htdocs\verum\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anotacoes))
+#11 C:\xampp\htdocs\verum\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\verum\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: php_network_getaddresses: getaddrinfo for verum failed: Este host não é conhecido.  in C:\xampp\htdocs\verum\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\xampp\htdocs\verum\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\verum\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\verum\system\Database\BaseBuilder.php(2302): CodeIgniter\Database\BaseConnection->query('INSERT INTO `an...', Array, false)
+#3 C:\xampp\htdocs\verum\system\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+#4 C:\xampp\htdocs\verum\system\BaseModel.php(802): CodeIgniter\Model->doInsert(Array)
+#5 C:\xampp\htdocs\verum\system\Model.php(744): CodeIgniter\BaseModel->insert(Array, true)
+#6 C:\xampp\htdocs\verum\app\Models\AnotacoesModel.php(14): CodeIgniter\Model->insert(Array)
+#7 C:\xampp\htdocs\verum\app\Controllers\Anotacoes.php(18): App\Models\AnotacoesModel->createAnotacao(Array)
+#8 C:\xampp\htdocs\verum\system\CodeIgniter.php(941): App\Controllers\Anotacoes->create()
+#9 C:\xampp\htdocs\verum\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anotacoes))
+#10 C:\xampp\htdocs\verum\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\verum\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2024-01-18 02:23:50 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: php_network_getaddresses: getaddrinfo for verum failed: Este host não é conhecido. 
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(2302): CodeIgniter\Database\BaseConnection->query('INSERT INTO `anotacoes` (`titulo`, `conteudo`) VALUES (:titulo:, :conteudo:)', [...], false)
+ 3 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 4 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 5 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], true)
+ 6 APPPATH\Models\AnotacoesModel.php(14): CodeIgniter\Model->insert([...])
+ 7 APPPATH\Controllers\Anotacoes.php(18): App\Models\AnotacoesModel->createAnotacao([...])
+ 8 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Anotacoes->create()
+ 9 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anotacoes))
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-18 02:29:33 --> Error: Class "App\Controllers\Controller" not found
+in APPPATH\Controllers\Anotacoes.php on line 7.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(309): include_once()
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(288): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\verum\\app\\Controllers\\Anotacoes.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(266): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Anotacoes')
+ 4 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Anotacoes')
+ 5 SYSTEMPATH\CodeIgniter.php(899): class_exists('\\App\\Controllers\\Anotacoes', true)
+ 6 SYSTEMPATH\CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-18 02:30:05 --> Error connecting to the database: ErrorException: mysqli::real_connect(): php_network_getaddresses: getaddrinfo for verum failed: Este host nï¿½o ï¿½ conhecido.  in C:\xampp\htdocs\verum\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'mysqli::real_co...', 'C:\\xampp\\htdocs...', 184)
+#1 C:\xampp\htdocs\verum\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('verum', 'root', Object(SensitiveParameterValue), '', 3306, '', 0)
+#2 C:\xampp\htdocs\verum\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#3 C:\xampp\htdocs\verum\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#4 C:\xampp\htdocs\verum\system\Database\BaseBuilder.php(2302): CodeIgniter\Database\BaseConnection->query('INSERT INTO `an...', Array, false)
+#5 C:\xampp\htdocs\verum\system\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+#6 C:\xampp\htdocs\verum\system\BaseModel.php(802): CodeIgniter\Model->doInsert(Array)
+#7 C:\xampp\htdocs\verum\system\Model.php(744): CodeIgniter\BaseModel->insert(Array, true)
+#8 C:\xampp\htdocs\verum\app\Models\AnotacoesModel.php(14): CodeIgniter\Model->insert(Array)
+#9 C:\xampp\htdocs\verum\app\Controllers\Anotacoes.php(17): App\Models\AnotacoesModel->createAnotacao(Array)
+#10 C:\xampp\htdocs\verum\system\CodeIgniter.php(941): App\Controllers\Anotacoes->create()
+#11 C:\xampp\htdocs\verum\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anotacoes))
+#12 C:\xampp\htdocs\verum\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 C:\xampp\htdocs\verum\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#14 {main}
+
+Next mysqli_sql_exception: php_network_getaddresses: getaddrinfo for verum failed: Este host não é conhecido.  in C:\xampp\htdocs\verum\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 C:\xampp\htdocs\verum\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('verum', 'root', Object(SensitiveParameterValue), '', 3306, '', 0)
+#1 C:\xampp\htdocs\verum\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\verum\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\verum\system\Database\BaseBuilder.php(2302): CodeIgniter\Database\BaseConnection->query('INSERT INTO `an...', Array, false)
+#4 C:\xampp\htdocs\verum\system\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\verum\system\BaseModel.php(802): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\verum\system\Model.php(744): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\verum\app\Models\AnotacoesModel.php(14): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\verum\app\Controllers\Anotacoes.php(17): App\Models\AnotacoesModel->createAnotacao(Array)
+#9 C:\xampp\htdocs\verum\system\CodeIgniter.php(941): App\Controllers\Anotacoes->create()
+#10 C:\xampp\htdocs\verum\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anotacoes))
+#11 C:\xampp\htdocs\verum\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\verum\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: php_network_getaddresses: getaddrinfo for verum failed: Este host não é conhecido.  in C:\xampp\htdocs\verum\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\xampp\htdocs\verum\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\verum\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\verum\system\Database\BaseBuilder.php(2302): CodeIgniter\Database\BaseConnection->query('INSERT INTO `an...', Array, false)
+#3 C:\xampp\htdocs\verum\system\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+#4 C:\xampp\htdocs\verum\system\BaseModel.php(802): CodeIgniter\Model->doInsert(Array)
+#5 C:\xampp\htdocs\verum\system\Model.php(744): CodeIgniter\BaseModel->insert(Array, true)
+#6 C:\xampp\htdocs\verum\app\Models\AnotacoesModel.php(14): CodeIgniter\Model->insert(Array)
+#7 C:\xampp\htdocs\verum\app\Controllers\Anotacoes.php(17): App\Models\AnotacoesModel->createAnotacao(Array)
+#8 C:\xampp\htdocs\verum\system\CodeIgniter.php(941): App\Controllers\Anotacoes->create()
+#9 C:\xampp\htdocs\verum\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anotacoes))
+#10 C:\xampp\htdocs\verum\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\verum\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2024-01-18 02:30:05 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: php_network_getaddresses: getaddrinfo for verum failed: Este host não é conhecido. 
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(2302): CodeIgniter\Database\BaseConnection->query('INSERT INTO `anotacoes` (`titulo`, `conteudo`) VALUES (:titulo:, :conteudo:)', [...], false)
+ 3 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 4 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 5 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], true)
+ 6 APPPATH\Models\AnotacoesModel.php(14): CodeIgniter\Model->insert([...])
+ 7 APPPATH\Controllers\Anotacoes.php(17): App\Models\AnotacoesModel->createAnotacao([...])
+ 8 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Anotacoes->create()
+ 9 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anotacoes))
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-18 02:35:03 --> Error connecting to the database: ErrorException: mysqli::real_connect(): php_network_getaddresses: getaddrinfo for verum failed: Este host nï¿½o ï¿½ conhecido.  in C:\xampp\htdocs\verum\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'mysqli::real_co...', 'C:\\xampp\\htdocs...', 184)
+#1 C:\xampp\htdocs\verum\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('verum', 'root', Object(SensitiveParameterValue), '', 3306, '', 0)
+#2 C:\xampp\htdocs\verum\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#3 C:\xampp\htdocs\verum\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#4 C:\xampp\htdocs\verum\system\Database\BaseBuilder.php(2302): CodeIgniter\Database\BaseConnection->query('INSERT INTO `an...', Array, false)
+#5 C:\xampp\htdocs\verum\system\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+#6 C:\xampp\htdocs\verum\system\BaseModel.php(802): CodeIgniter\Model->doInsert(Array)
+#7 C:\xampp\htdocs\verum\system\Model.php(744): CodeIgniter\BaseModel->insert(Array, true)
+#8 C:\xampp\htdocs\verum\app\Models\AnotacoesModel.php(14): CodeIgniter\Model->insert(Array)
+#9 C:\xampp\htdocs\verum\app\Controllers\Anotacoes.php(17): App\Models\AnotacoesModel->createAnotacao(Array)
+#10 C:\xampp\htdocs\verum\system\CodeIgniter.php(941): App\Controllers\Anotacoes->create()
+#11 C:\xampp\htdocs\verum\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anotacoes))
+#12 C:\xampp\htdocs\verum\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 C:\xampp\htdocs\verum\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#14 {main}
+
+Next mysqli_sql_exception: php_network_getaddresses: getaddrinfo for verum failed: Este host não é conhecido.  in C:\xampp\htdocs\verum\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 C:\xampp\htdocs\verum\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('verum', 'root', Object(SensitiveParameterValue), '', 3306, '', 0)
+#1 C:\xampp\htdocs\verum\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\verum\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\verum\system\Database\BaseBuilder.php(2302): CodeIgniter\Database\BaseConnection->query('INSERT INTO `an...', Array, false)
+#4 C:\xampp\htdocs\verum\system\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\verum\system\BaseModel.php(802): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\verum\system\Model.php(744): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\verum\app\Models\AnotacoesModel.php(14): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\verum\app\Controllers\Anotacoes.php(17): App\Models\AnotacoesModel->createAnotacao(Array)
+#9 C:\xampp\htdocs\verum\system\CodeIgniter.php(941): App\Controllers\Anotacoes->create()
+#10 C:\xampp\htdocs\verum\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anotacoes))
+#11 C:\xampp\htdocs\verum\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\verum\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: php_network_getaddresses: getaddrinfo for verum failed: Este host não é conhecido.  in C:\xampp\htdocs\verum\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\xampp\htdocs\verum\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\verum\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\verum\system\Database\BaseBuilder.php(2302): CodeIgniter\Database\BaseConnection->query('INSERT INTO `an...', Array, false)
+#3 C:\xampp\htdocs\verum\system\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+#4 C:\xampp\htdocs\verum\system\BaseModel.php(802): CodeIgniter\Model->doInsert(Array)
+#5 C:\xampp\htdocs\verum\system\Model.php(744): CodeIgniter\BaseModel->insert(Array, true)
+#6 C:\xampp\htdocs\verum\app\Models\AnotacoesModel.php(14): CodeIgniter\Model->insert(Array)
+#7 C:\xampp\htdocs\verum\app\Controllers\Anotacoes.php(17): App\Models\AnotacoesModel->createAnotacao(Array)
+#8 C:\xampp\htdocs\verum\system\CodeIgniter.php(941): App\Controllers\Anotacoes->create()
+#9 C:\xampp\htdocs\verum\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anotacoes))
+#10 C:\xampp\htdocs\verum\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\verum\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2024-01-18 02:35:03 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: php_network_getaddresses: getaddrinfo for verum failed: Este host não é conhecido. 
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(2302): CodeIgniter\Database\BaseConnection->query('INSERT INTO `anotacoes` (`titulo`, `conteudo`) VALUES (:titulo:, :conteudo:)', [...], false)
+ 3 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 4 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 5 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], true)
+ 6 APPPATH\Models\AnotacoesModel.php(14): CodeIgniter\Model->insert([...])
+ 7 APPPATH\Controllers\Anotacoes.php(17): App\Models\AnotacoesModel->createAnotacao([...])
+ 8 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Anotacoes->create()
+ 9 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anotacoes))
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-18 02:39:39 --> ParseError: syntax error, unexpected end of file, expecting "elseif" or "else" or "endif"
+in APPPATH\Views\fase1.php on line 310.
+ 1 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('fase1', [], true)
+ 3 APPPATH\Controllers\Fases.php(8): view('fase1')
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Fases->fase1()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Fases))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-18 02:44:24 --> Error connecting to the database: ErrorException: mysqli::real_connect(): php_network_getaddresses: getaddrinfo for verum failed: Este host nï¿½o ï¿½ conhecido.  in C:\xampp\htdocs\verum\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'mysqli::real_co...', 'C:\\xampp\\htdocs...', 184)
+#1 C:\xampp\htdocs\verum\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('verum', 'root', Object(SensitiveParameterValue), '', 3306, '', 0)
+#2 C:\xampp\htdocs\verum\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#3 C:\xampp\htdocs\verum\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#4 C:\xampp\htdocs\verum\system\Database\BaseBuilder.php(2302): CodeIgniter\Database\BaseConnection->query('INSERT INTO `an...', Array, false)
+#5 C:\xampp\htdocs\verum\system\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+#6 C:\xampp\htdocs\verum\system\BaseModel.php(802): CodeIgniter\Model->doInsert(Array)
+#7 C:\xampp\htdocs\verum\system\Model.php(744): CodeIgniter\BaseModel->insert(Array, true)
+#8 C:\xampp\htdocs\verum\app\Models\AnotacoesModel.php(14): CodeIgniter\Model->insert(Array)
+#9 C:\xampp\htdocs\verum\app\Controllers\Anotacoes.php(17): App\Models\AnotacoesModel->createAnotacao(Array)
+#10 C:\xampp\htdocs\verum\system\CodeIgniter.php(941): App\Controllers\Anotacoes->create()
+#11 C:\xampp\htdocs\verum\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anotacoes))
+#12 C:\xampp\htdocs\verum\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 C:\xampp\htdocs\verum\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#14 {main}
+
+Next mysqli_sql_exception: php_network_getaddresses: getaddrinfo for verum failed: Este host não é conhecido.  in C:\xampp\htdocs\verum\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 C:\xampp\htdocs\verum\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('verum', 'root', Object(SensitiveParameterValue), '', 3306, '', 0)
+#1 C:\xampp\htdocs\verum\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\verum\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\verum\system\Database\BaseBuilder.php(2302): CodeIgniter\Database\BaseConnection->query('INSERT INTO `an...', Array, false)
+#4 C:\xampp\htdocs\verum\system\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\verum\system\BaseModel.php(802): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\verum\system\Model.php(744): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\verum\app\Models\AnotacoesModel.php(14): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\verum\app\Controllers\Anotacoes.php(17): App\Models\AnotacoesModel->createAnotacao(Array)
+#9 C:\xampp\htdocs\verum\system\CodeIgniter.php(941): App\Controllers\Anotacoes->create()
+#10 C:\xampp\htdocs\verum\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anotacoes))
+#11 C:\xampp\htdocs\verum\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\verum\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: php_network_getaddresses: getaddrinfo for verum failed: Este host não é conhecido.  in C:\xampp\htdocs\verum\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\xampp\htdocs\verum\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\verum\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\verum\system\Database\BaseBuilder.php(2302): CodeIgniter\Database\BaseConnection->query('INSERT INTO `an...', Array, false)
+#3 C:\xampp\htdocs\verum\system\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+#4 C:\xampp\htdocs\verum\system\BaseModel.php(802): CodeIgniter\Model->doInsert(Array)
+#5 C:\xampp\htdocs\verum\system\Model.php(744): CodeIgniter\BaseModel->insert(Array, true)
+#6 C:\xampp\htdocs\verum\app\Models\AnotacoesModel.php(14): CodeIgniter\Model->insert(Array)
+#7 C:\xampp\htdocs\verum\app\Controllers\Anotacoes.php(17): App\Models\AnotacoesModel->createAnotacao(Array)
+#8 C:\xampp\htdocs\verum\system\CodeIgniter.php(941): App\Controllers\Anotacoes->create()
+#9 C:\xampp\htdocs\verum\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anotacoes))
+#10 C:\xampp\htdocs\verum\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\verum\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2024-01-18 02:44:24 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: php_network_getaddresses: getaddrinfo for verum failed: Este host não é conhecido. 
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(2302): CodeIgniter\Database\BaseConnection->query('INSERT INTO `anotacoes` (`titulo`, `conteudo`) VALUES (:titulo:, :conteudo:)', [...], false)
+ 3 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 4 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 5 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], true)
+ 6 APPPATH\Models\AnotacoesModel.php(14): CodeIgniter\Model->insert([...])
+ 7 APPPATH\Controllers\Anotacoes.php(17): App\Models\AnotacoesModel->createAnotacao([...])
+ 8 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Anotacoes->create()
+ 9 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anotacoes))
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-18 02:46:48 --> Error connecting to the database: ErrorException: mysqli::real_connect(): php_network_getaddresses: getaddrinfo for verum failed: Este host nï¿½o ï¿½ conhecido.  in C:\xampp\htdocs\verum\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'mysqli::real_co...', 'C:\\xampp\\htdocs...', 184)
+#1 C:\xampp\htdocs\verum\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('verum', 'root', Object(SensitiveParameterValue), '', 3306, '', 0)
+#2 C:\xampp\htdocs\verum\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#3 C:\xampp\htdocs\verum\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#4 C:\xampp\htdocs\verum\system\Database\BaseBuilder.php(2302): CodeIgniter\Database\BaseConnection->query('INSERT INTO `an...', Array, false)
+#5 C:\xampp\htdocs\verum\system\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+#6 C:\xampp\htdocs\verum\system\BaseModel.php(802): CodeIgniter\Model->doInsert(Array)
+#7 C:\xampp\htdocs\verum\system\Model.php(744): CodeIgniter\BaseModel->insert(Array, true)
+#8 C:\xampp\htdocs\verum\app\Models\AnotacoesModel.php(14): CodeIgniter\Model->insert(Array)
+#9 C:\xampp\htdocs\verum\app\Controllers\Anotacoes.php(17): App\Models\AnotacoesModel->createAnotacao(Array)
+#10 C:\xampp\htdocs\verum\system\CodeIgniter.php(941): App\Controllers\Anotacoes->create()
+#11 C:\xampp\htdocs\verum\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anotacoes))
+#12 C:\xampp\htdocs\verum\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 C:\xampp\htdocs\verum\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#14 {main}
+
+Next mysqli_sql_exception: php_network_getaddresses: getaddrinfo for verum failed: Este host não é conhecido.  in C:\xampp\htdocs\verum\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 C:\xampp\htdocs\verum\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('verum', 'root', Object(SensitiveParameterValue), '', 3306, '', 0)
+#1 C:\xampp\htdocs\verum\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\verum\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\verum\system\Database\BaseBuilder.php(2302): CodeIgniter\Database\BaseConnection->query('INSERT INTO `an...', Array, false)
+#4 C:\xampp\htdocs\verum\system\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\verum\system\BaseModel.php(802): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\verum\system\Model.php(744): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\verum\app\Models\AnotacoesModel.php(14): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\verum\app\Controllers\Anotacoes.php(17): App\Models\AnotacoesModel->createAnotacao(Array)
+#9 C:\xampp\htdocs\verum\system\CodeIgniter.php(941): App\Controllers\Anotacoes->create()
+#10 C:\xampp\htdocs\verum\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anotacoes))
+#11 C:\xampp\htdocs\verum\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\verum\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: php_network_getaddresses: getaddrinfo for verum failed: Este host não é conhecido.  in C:\xampp\htdocs\verum\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\xampp\htdocs\verum\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\verum\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\verum\system\Database\BaseBuilder.php(2302): CodeIgniter\Database\BaseConnection->query('INSERT INTO `an...', Array, false)
+#3 C:\xampp\htdocs\verum\system\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+#4 C:\xampp\htdocs\verum\system\BaseModel.php(802): CodeIgniter\Model->doInsert(Array)
+#5 C:\xampp\htdocs\verum\system\Model.php(744): CodeIgniter\BaseModel->insert(Array, true)
+#6 C:\xampp\htdocs\verum\app\Models\AnotacoesModel.php(14): CodeIgniter\Model->insert(Array)
+#7 C:\xampp\htdocs\verum\app\Controllers\Anotacoes.php(17): App\Models\AnotacoesModel->createAnotacao(Array)
+#8 C:\xampp\htdocs\verum\system\CodeIgniter.php(941): App\Controllers\Anotacoes->create()
+#9 C:\xampp\htdocs\verum\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anotacoes))
+#10 C:\xampp\htdocs\verum\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\verum\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2024-01-18 02:46:48 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: php_network_getaddresses: getaddrinfo for verum failed: Este host não é conhecido. 
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(2302): CodeIgniter\Database\BaseConnection->query('INSERT INTO `anotacoes` (`titulo`, `conteudo`) VALUES (:titulo:, :conteudo:)', [...], false)
+ 3 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 4 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 5 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], true)
+ 6 APPPATH\Models\AnotacoesModel.php(14): CodeIgniter\Model->insert([...])
+ 7 APPPATH\Controllers\Anotacoes.php(17): App\Models\AnotacoesModel->createAnotacao([...])
+ 8 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Anotacoes->create()
+ 9 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anotacoes))
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-18 02:47:18 --> Error connecting to the database: ErrorException: mysqli::real_connect(): php_network_getaddresses: getaddrinfo for verum failed: Este host nï¿½o ï¿½ conhecido.  in C:\xampp\htdocs\verum\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'mysqli::real_co...', 'C:\\xampp\\htdocs...', 184)
+#1 C:\xampp\htdocs\verum\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('verum', 'root', Object(SensitiveParameterValue), '', 3306, '', 0)
+#2 C:\xampp\htdocs\verum\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#3 C:\xampp\htdocs\verum\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#4 C:\xampp\htdocs\verum\system\Database\BaseBuilder.php(2302): CodeIgniter\Database\BaseConnection->query('INSERT INTO `an...', Array, false)
+#5 C:\xampp\htdocs\verum\system\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+#6 C:\xampp\htdocs\verum\system\BaseModel.php(802): CodeIgniter\Model->doInsert(Array)
+#7 C:\xampp\htdocs\verum\system\Model.php(744): CodeIgniter\BaseModel->insert(Array, true)
+#8 C:\xampp\htdocs\verum\app\Models\AnotacoesModel.php(14): CodeIgniter\Model->insert(Array)
+#9 C:\xampp\htdocs\verum\app\Controllers\Anotacoes.php(17): App\Models\AnotacoesModel->createAnotacao(Array)
+#10 C:\xampp\htdocs\verum\system\CodeIgniter.php(941): App\Controllers\Anotacoes->create()
+#11 C:\xampp\htdocs\verum\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anotacoes))
+#12 C:\xampp\htdocs\verum\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 C:\xampp\htdocs\verum\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#14 {main}
+
+Next mysqli_sql_exception: php_network_getaddresses: getaddrinfo for verum failed: Este host não é conhecido.  in C:\xampp\htdocs\verum\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 C:\xampp\htdocs\verum\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('verum', 'root', Object(SensitiveParameterValue), '', 3306, '', 0)
+#1 C:\xampp\htdocs\verum\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\verum\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\verum\system\Database\BaseBuilder.php(2302): CodeIgniter\Database\BaseConnection->query('INSERT INTO `an...', Array, false)
+#4 C:\xampp\htdocs\verum\system\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\verum\system\BaseModel.php(802): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\verum\system\Model.php(744): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\verum\app\Models\AnotacoesModel.php(14): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\verum\app\Controllers\Anotacoes.php(17): App\Models\AnotacoesModel->createAnotacao(Array)
+#9 C:\xampp\htdocs\verum\system\CodeIgniter.php(941): App\Controllers\Anotacoes->create()
+#10 C:\xampp\htdocs\verum\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anotacoes))
+#11 C:\xampp\htdocs\verum\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\verum\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: php_network_getaddresses: getaddrinfo for verum failed: Este host não é conhecido.  in C:\xampp\htdocs\verum\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\xampp\htdocs\verum\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\verum\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\verum\system\Database\BaseBuilder.php(2302): CodeIgniter\Database\BaseConnection->query('INSERT INTO `an...', Array, false)
+#3 C:\xampp\htdocs\verum\system\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+#4 C:\xampp\htdocs\verum\system\BaseModel.php(802): CodeIgniter\Model->doInsert(Array)
+#5 C:\xampp\htdocs\verum\system\Model.php(744): CodeIgniter\BaseModel->insert(Array, true)
+#6 C:\xampp\htdocs\verum\app\Models\AnotacoesModel.php(14): CodeIgniter\Model->insert(Array)
+#7 C:\xampp\htdocs\verum\app\Controllers\Anotacoes.php(17): App\Models\AnotacoesModel->createAnotacao(Array)
+#8 C:\xampp\htdocs\verum\system\CodeIgniter.php(941): App\Controllers\Anotacoes->create()
+#9 C:\xampp\htdocs\verum\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anotacoes))
+#10 C:\xampp\htdocs\verum\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\verum\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2024-01-18 02:47:18 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: php_network_getaddresses: getaddrinfo for verum failed: Este host não é conhecido. 
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(2302): CodeIgniter\Database\BaseConnection->query('INSERT INTO `anotacoes` (`titulo`, `conteudo`) VALUES (:titulo:, :conteudo:)', [...], false)
+ 3 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 4 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 5 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], true)
+ 6 APPPATH\Models\AnotacoesModel.php(14): CodeIgniter\Model->insert([...])
+ 7 APPPATH\Controllers\Anotacoes.php(17): App\Models\AnotacoesModel->createAnotacao([...])
+ 8 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Anotacoes->create()
+ 9 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anotacoes))
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-18 02:53:28 --> mysqli_sql_exception: Column 'titulo' cannot be null in C:\xampp\htdocs\verum\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\verum\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `an...', 0)
+#1 C:\xampp\htdocs\verum\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `an...')
+#2 C:\xampp\htdocs\verum\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `an...')
+#3 C:\xampp\htdocs\verum\system\Database\BaseBuilder.php(2302): CodeIgniter\Database\BaseConnection->query('INSERT INTO `an...', Array, false)
+#4 C:\xampp\htdocs\verum\system\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\verum\system\BaseModel.php(802): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\verum\system\Model.php(744): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\verum\app\Models\AnotacoesModel.php(14): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\verum\app\Controllers\Anotacoes.php(17): App\Models\AnotacoesModel->createAnotacao(Array)
+#9 C:\xampp\htdocs\verum\system\CodeIgniter.php(941): App\Controllers\Anotacoes->create()
+#10 C:\xampp\htdocs\verum\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anotacoes))
+#11 C:\xampp\htdocs\verum\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\verum\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2024-01-18 02:53:28 --> CodeIgniter\Database\Exceptions\DatabaseException: Column 'titulo' cannot be null
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2302): CodeIgniter\Database\BaseConnection->query('INSERT INTO `anotacoes` (`titulo`, `conteudo`) VALUES (:titulo:, :conteudo:)', [...], false)
+ 2 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Models\AnotacoesModel.php(14): CodeIgniter\Model->insert([...])
+ 6 APPPATH\Controllers\Anotacoes.php(17): App\Models\AnotacoesModel->createAnotacao([...])
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Anotacoes->create()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anotacoes))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-18 02:53:28 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Column 'titulo' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `anotacoes` (`titulo`, `conteudo`) VALUES (NULL, NULL)')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `anotacoes` (`titulo`, `conteudo`) VALUES (NULL, NULL)')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2302): CodeIgniter\Database\BaseConnection->query('INSERT INTO `anotacoes` (`titulo`, `conteudo`) VALUES (:titulo:, :conteudo:)', [...], false)
+ 4 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH\Models\AnotacoesModel.php(14): CodeIgniter\Model->insert([...])
+ 8 APPPATH\Controllers\Anotacoes.php(17): App\Models\AnotacoesModel->createAnotacao([...])
+ 9 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Anotacoes->create()
+10 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anotacoes))
+11 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-18 02:53:28 --> [Caused by] mysqli_sql_exception: Column 'titulo' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `anotacoes` (`titulo`, `conteudo`) VALUES (NULL, NULL)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `anotacoes` (`titulo`, `conteudo`) VALUES (NULL, NULL)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `anotacoes` (`titulo`, `conteudo`) VALUES (NULL, NULL)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2302): CodeIgniter\Database\BaseConnection->query('INSERT INTO `anotacoes` (`titulo`, `conteudo`) VALUES (:titulo:, :conteudo:)', [...], false)
+ 5 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Models\AnotacoesModel.php(14): CodeIgniter\Model->insert([...])
+ 9 APPPATH\Controllers\Anotacoes.php(17): App\Models\AnotacoesModel->createAnotacao([...])
+10 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Anotacoes->create()
+11 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anotacoes))
+12 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-18 02:55:21 --> mysqli_sql_exception: Column 'titulo' cannot be null in C:\xampp\htdocs\verum\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\verum\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `an...', 0)
+#1 C:\xampp\htdocs\verum\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `an...')
+#2 C:\xampp\htdocs\verum\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `an...')
+#3 C:\xampp\htdocs\verum\system\Database\BaseBuilder.php(2302): CodeIgniter\Database\BaseConnection->query('INSERT INTO `an...', Array, false)
+#4 C:\xampp\htdocs\verum\system\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\verum\system\BaseModel.php(802): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\verum\system\Model.php(744): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\verum\app\Models\AnotacoesModel.php(14): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\verum\app\Controllers\Anotacoes.php(17): App\Models\AnotacoesModel->createAnotacao(Array)
+#9 C:\xampp\htdocs\verum\system\CodeIgniter.php(941): App\Controllers\Anotacoes->create()
+#10 C:\xampp\htdocs\verum\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anotacoes))
+#11 C:\xampp\htdocs\verum\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\verum\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2024-01-18 02:55:21 --> CodeIgniter\Database\Exceptions\DatabaseException: Column 'titulo' cannot be null
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2302): CodeIgniter\Database\BaseConnection->query('INSERT INTO `anotacoes` (`titulo`, `conteudo`) VALUES (:titulo:, :conteudo:)', [...], false)
+ 2 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Models\AnotacoesModel.php(14): CodeIgniter\Model->insert([...])
+ 6 APPPATH\Controllers\Anotacoes.php(17): App\Models\AnotacoesModel->createAnotacao([...])
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Anotacoes->create()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anotacoes))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-18 02:55:21 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Column 'titulo' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `anotacoes` (`titulo`, `conteudo`) VALUES (NULL, NULL)')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `anotacoes` (`titulo`, `conteudo`) VALUES (NULL, NULL)')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2302): CodeIgniter\Database\BaseConnection->query('INSERT INTO `anotacoes` (`titulo`, `conteudo`) VALUES (:titulo:, :conteudo:)', [...], false)
+ 4 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH\Models\AnotacoesModel.php(14): CodeIgniter\Model->insert([...])
+ 8 APPPATH\Controllers\Anotacoes.php(17): App\Models\AnotacoesModel->createAnotacao([...])
+ 9 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Anotacoes->create()
+10 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anotacoes))
+11 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-18 02:55:21 --> [Caused by] mysqli_sql_exception: Column 'titulo' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `anotacoes` (`titulo`, `conteudo`) VALUES (NULL, NULL)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `anotacoes` (`titulo`, `conteudo`) VALUES (NULL, NULL)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `anotacoes` (`titulo`, `conteudo`) VALUES (NULL, NULL)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2302): CodeIgniter\Database\BaseConnection->query('INSERT INTO `anotacoes` (`titulo`, `conteudo`) VALUES (:titulo:, :conteudo:)', [...], false)
+ 5 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Models\AnotacoesModel.php(14): CodeIgniter\Model->insert([...])
+ 9 APPPATH\Controllers\Anotacoes.php(17): App\Models\AnotacoesModel->createAnotacao([...])
+10 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Anotacoes->create()
+11 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anotacoes))
+12 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

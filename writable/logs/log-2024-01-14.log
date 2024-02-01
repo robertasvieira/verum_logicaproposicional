@@ -1,0 +1,617 @@
+CRITICAL - 2024-01-14 19:59:32 --> ErrorException: Undefined property: App\Controllers\Questoes::$input
+in APPPATH\Controllers\Questoes.php on line 17.
+ 1 APPPATH\Controllers\Questoes.php(17): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Questoes::$input', 'C:\\xampp\\htdocs\\game\\app\\Controllers\\Questoes.php', 17)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Questoes->processarRespostas()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Questoes))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-14 20:48:22 --> ErrorException: Trying to access array offset on value of type null
+in APPPATH\Models\QuestoesModel.php on line 19.
+ 1 APPPATH\Models\QuestoesModel.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\game\\app\\Models\\QuestoesModel.php', 19)
+ 2 APPPATH\Controllers\Questoes.php(26): App\Models\QuestoesModel->getRespostaCorreta('A')
+ 3 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Questoes->processarRespostas()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Questoes))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-14 20:48:44 --> ErrorException: Trying to access array offset on value of type null
+in APPPATH\Models\QuestoesModel.php on line 19.
+ 1 APPPATH\Models\QuestoesModel.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\game\\app\\Models\\QuestoesModel.php', 19)
+ 2 APPPATH\Controllers\Questoes.php(26): App\Models\QuestoesModel->getRespostaCorreta('D')
+ 3 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Questoes->processarRespostas()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Questoes))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-14 20:48:46 --> ErrorException: Trying to access array offset on value of type null
+in APPPATH\Models\QuestoesModel.php on line 19.
+ 1 APPPATH\Models\QuestoesModel.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\game\\app\\Models\\QuestoesModel.php', 19)
+ 2 APPPATH\Controllers\Questoes.php(26): App\Models\QuestoesModel->getRespostaCorreta('A')
+ 3 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Questoes->processarRespostas()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Questoes))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-14 20:49:45 --> ErrorException: Trying to access array offset on value of type null
+in APPPATH\Models\QuestoesModel.php on line 19.
+ 1 APPPATH\Models\QuestoesModel.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\game\\app\\Models\\QuestoesModel.php', 19)
+ 2 APPPATH\Controllers\Questoes.php(26): App\Models\QuestoesModel->getRespostaCorreta('A')
+ 3 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Questoes->processarRespostas()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Questoes))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-14 20:49:49 --> ErrorException: Trying to access array offset on value of type null
+in APPPATH\Models\QuestoesModel.php on line 19.
+ 1 APPPATH\Models\QuestoesModel.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\game\\app\\Models\\QuestoesModel.php', 19)
+ 2 APPPATH\Controllers\Questoes.php(26): App\Models\QuestoesModel->getRespostaCorreta('A')
+ 3 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Questoes->processarRespostas()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Questoes))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-14 20:49:52 --> ErrorException: Trying to access array offset on value of type null
+in APPPATH\Models\QuestoesModel.php on line 19.
+ 1 APPPATH\Models\QuestoesModel.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\game\\app\\Models\\QuestoesModel.php', 19)
+ 2 APPPATH\Controllers\Questoes.php(26): App\Models\QuestoesModel->getRespostaCorreta('A')
+ 3 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Questoes->processarRespostas()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Questoes))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-14 20:51:57 --> ErrorException: Trying to access array offset on value of type null
+in APPPATH\Controllers\Questoes.php on line 25.
+ 1 APPPATH\Controllers\Questoes.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\game\\app\\Controllers\\Questoes.php', 25)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Questoes->processarRespostas()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Questoes))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-14 20:52:02 --> ErrorException: Trying to access array offset on value of type null
+in APPPATH\Controllers\Questoes.php on line 25.
+ 1 APPPATH\Controllers\Questoes.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\game\\app\\Controllers\\Questoes.php', 25)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Questoes->processarRespostas()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Questoes))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-14 20:52:05 --> ErrorException: Trying to access array offset on value of type null
+in APPPATH\Controllers\Questoes.php on line 25.
+ 1 APPPATH\Controllers\Questoes.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\game\\app\\Controllers\\Questoes.php', 25)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Questoes->processarRespostas()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Questoes))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-14 20:58:51 --> ErrorException: Trying to access array offset on value of type null
+in APPPATH\Controllers\Questoes.php on line 25.
+ 1 APPPATH\Controllers\Questoes.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\game\\app\\Controllers\\Questoes.php', 25)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Questoes->processarRespostas()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Questoes))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-14 20:59:01 --> ErrorException: Trying to access array offset on value of type null
+in APPPATH\Controllers\Questoes.php on line 25.
+ 1 APPPATH\Controllers\Questoes.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\game\\app\\Controllers\\Questoes.php', 25)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Questoes->processarRespostas()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Questoes))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-14 20:59:08 --> ErrorException: Trying to access array offset on value of type null
+in APPPATH\Controllers\Questoes.php on line 25.
+ 1 APPPATH\Controllers\Questoes.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\game\\app\\Controllers\\Questoes.php', 25)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Questoes->processarRespostas()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Questoes))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-14 21:03:44 --> ErrorException: Trying to access array offset on value of type null
+in APPPATH\Controllers\Questoes.php on line 25.
+ 1 APPPATH\Controllers\Questoes.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\game\\app\\Controllers\\Questoes.php', 25)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Questoes->processarRespostas()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Questoes))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-14 21:03:46 --> ErrorException: Trying to access array offset on value of type null
+in APPPATH\Controllers\Questoes.php on line 25.
+ 1 APPPATH\Controllers\Questoes.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\game\\app\\Controllers\\Questoes.php', 25)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Questoes->processarRespostas()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Questoes))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-14 21:03:47 --> ErrorException: Trying to access array offset on value of type null
+in APPPATH\Controllers\Questoes.php on line 25.
+ 1 APPPATH\Controllers\Questoes.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\game\\app\\Controllers\\Questoes.php', 25)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Questoes->processarRespostas()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Questoes))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-14 21:03:57 --> ErrorException: Trying to access array offset on value of type null
+in APPPATH\Controllers\Questoes.php on line 25.
+ 1 APPPATH\Controllers\Questoes.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\game\\app\\Controllers\\Questoes.php', 25)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Questoes->processarRespostas()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Questoes))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-14 21:06:21 --> ErrorException: Trying to access array offset on value of type null
+in APPPATH\Controllers\Questoes.php on line 25.
+ 1 APPPATH\Controllers\Questoes.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\game\\app\\Controllers\\Questoes.php', 25)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Questoes->processarRespostas()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Questoes))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-14 21:06:26 --> ErrorException: Trying to access array offset on value of type null
+in APPPATH\Controllers\Questoes.php on line 25.
+ 1 APPPATH\Controllers\Questoes.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\game\\app\\Controllers\\Questoes.php', 25)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Questoes->processarRespostas()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Questoes))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-14 21:06:27 --> ErrorException: Trying to access array offset on value of type null
+in APPPATH\Controllers\Questoes.php on line 25.
+ 1 APPPATH\Controllers\Questoes.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\game\\app\\Controllers\\Questoes.php', 25)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Questoes->processarRespostas()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Questoes))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-14 21:07:48 --> ErrorException: Undefined array key "opcao_correta"
+in APPPATH\Controllers\Questoes.php on line 25.
+ 1 APPPATH\Controllers\Questoes.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "opcao_correta"', 'C:\\xampp\\htdocs\\game\\app\\Controllers\\Questoes.php', 25)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Questoes->processarRespostas()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Questoes))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-14 21:09:28 --> ErrorException: Trying to access array offset on value of type null
+in APPPATH\Controllers\Questoes.php on line 25.
+ 1 APPPATH\Controllers\Questoes.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\game\\app\\Controllers\\Questoes.php', 25)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Questoes->processarRespostas()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Questoes))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-14 21:11:45 --> ErrorException: Trying to access array offset on value of type null
+in APPPATH\Controllers\Questoes.php on line 25.
+ 1 APPPATH\Controllers\Questoes.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\game\\app\\Controllers\\Questoes.php', 25)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Questoes->processarRespostas()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Questoes))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-14 21:14:46 --> ErrorException: Trying to access array offset on value of type null
+in APPPATH\Controllers\Questoes.php on line 25.
+ 1 APPPATH\Controllers\Questoes.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\game\\app\\Controllers\\Questoes.php', 25)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Questoes->processar_respostas()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Questoes))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-14 21:19:45 --> ErrorException: Trying to access array offset on value of type null
+in APPPATH\Controllers\Questoes.php on line 25.
+ 1 APPPATH\Controllers\Questoes.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\game\\app\\Controllers\\Questoes.php', 25)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Questoes->processar_respostas()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Questoes))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-14 21:22:35 --> Error: Object of class CodeIgniter\Router\RouteCollection could not be converted to string
+in APPPATH\Config\Routes.php on line 18.
+ 1 SYSTEMPATH\Router\RouteCollection.php(344): require()
+ 2 SYSTEMPATH\CodeIgniter.php(810): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 3 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-14 21:23:17 --> ErrorException: Undefined array key "opcao_correta"
+in APPPATH\Controllers\Questoes.php on line 25.
+ 1 APPPATH\Controllers\Questoes.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "opcao_correta"', 'C:\\xampp\\htdocs\\game\\app\\Controllers\\Questoes.php', 25)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Questoes->processar_respostas()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Questoes))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-14 21:24:54 --> ErrorException: Undefined variable $request
+in APPPATH\Controllers\Questoes.php on line 18.
+ 1 APPPATH\Controllers\Questoes.php(18): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $request', 'C:\\xampp\\htdocs\\game\\app\\Controllers\\Questoes.php', 18)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Questoes->processar_respostas()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Questoes))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-14 21:25:32 --> ErrorException: Undefined array key "opcao_correta"
+in APPPATH\Controllers\Questoes.php on line 27.
+ 1 APPPATH\Controllers\Questoes.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "opcao_correta"', 'C:\\xampp\\htdocs\\game\\app\\Controllers\\Questoes.php', 27)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Questoes->processar_respostas()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Questoes))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-14 21:28:24 --> ParseError: syntax error, unexpected variable "$resultado"
+in APPPATH\Controllers\Questoes.php on line 28.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(288): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\game\\app\\Controllers\\Questoes.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(266): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Questoes')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Questoes')
+ 4 SYSTEMPATH\CodeIgniter.php(899): class_exists('\\App\\Controllers\\Questoes', true)
+ 5 SYSTEMPATH\CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-14 21:30:43 --> ErrorException: Undefined array key "opcao_correta"
+in APPPATH\Controllers\Questoes.php on line 28.
+ 1 APPPATH\Controllers\Questoes.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "opcao_correta"', 'C:\\xampp\\htdocs\\game\\app\\Controllers\\Questoes.php', 28)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Questoes->processar_respostas()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Questoes))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-14 21:30:47 --> ErrorException: Undefined array key "opcao_correta"
+in APPPATH\Controllers\Questoes.php on line 28.
+ 1 APPPATH\Controllers\Questoes.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "opcao_correta"', 'C:\\xampp\\htdocs\\game\\app\\Controllers\\Questoes.php', 28)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Questoes->processar_respostas()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Questoes))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-14 21:32:53 --> ErrorException: Undefined array key "opcao_correta"
+in APPPATH\Controllers\Questoes.php on line 28.
+ 1 APPPATH\Controllers\Questoes.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "opcao_correta"', 'C:\\xampp\\htdocs\\game\\app\\Controllers\\Questoes.php', 28)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Questoes->processar_respostas()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Questoes))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-14 21:32:56 --> ErrorException: Undefined array key "opcao_correta"
+in APPPATH\Controllers\Questoes.php on line 28.
+ 1 APPPATH\Controllers\Questoes.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "opcao_correta"', 'C:\\xampp\\htdocs\\game\\app\\Controllers\\Questoes.php', 28)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Questoes->processar_respostas()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Questoes))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-14 21:38:25 --> ErrorException: Undefined array key "opcao_correta"
+in APPPATH\Controllers\Questoes.php on line 28.
+ 1 APPPATH\Controllers\Questoes.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "opcao_correta"', 'C:\\xampp\\htdocs\\game\\app\\Controllers\\Questoes.php', 28)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Questoes->processar_respostas()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Questoes))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-14 21:38:27 --> ErrorException: Undefined array key "opcao_correta"
+in APPPATH\Controllers\Questoes.php on line 28.
+ 1 APPPATH\Controllers\Questoes.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "opcao_correta"', 'C:\\xampp\\htdocs\\game\\app\\Controllers\\Questoes.php', 28)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Questoes->processar_respostas()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Questoes))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-14 21:38:29 --> ErrorException: Undefined array key "opcao_correta"
+in APPPATH\Controllers\Questoes.php on line 28.
+ 1 APPPATH\Controllers\Questoes.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "opcao_correta"', 'C:\\xampp\\htdocs\\game\\app\\Controllers\\Questoes.php', 28)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Questoes->processar_respostas()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Questoes))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-14 21:40:49 --> ErrorException: Undefined array key "opcao_correta"
+in APPPATH\Controllers\Questoes.php on line 28.
+ 1 APPPATH\Controllers\Questoes.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "opcao_correta"', 'C:\\xampp\\htdocs\\game\\app\\Controllers\\Questoes.php', 28)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Questoes->processar_respostas()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Questoes))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-14 21:40:54 --> ErrorException: Undefined array key "opcao_correta"
+in APPPATH\Controllers\Questoes.php on line 28.
+ 1 APPPATH\Controllers\Questoes.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "opcao_correta"', 'C:\\xampp\\htdocs\\game\\app\\Controllers\\Questoes.php', 28)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Questoes->processar_respostas()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Questoes))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-14 21:58:24 --> ErrorException: Undefined variable $questao
+in APPPATH\Controllers\Questoes.php on line 27.
+ 1 APPPATH\Controllers\Questoes.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $questao', 'C:\\xampp\\htdocs\\game\\app\\Controllers\\Questoes.php', 27)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Questoes->processar_respostas()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Questoes))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-14 22:03:17 --> ErrorException: Undefined variable $questao
+in APPPATH\Controllers\Questoes.php on line 28.
+ 1 APPPATH\Controllers\Questoes.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $questao', 'C:\\xampp\\htdocs\\game\\app\\Controllers\\Questoes.php', 28)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Questoes->processar_respostas()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Questoes))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-14 22:06:44 --> ErrorException: Undefined property: App\Controllers\Questoes::$load
+in APPPATH\Controllers\Questoes.php on line 10.
+ 1 APPPATH\Controllers\Questoes.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Questoes::$load', 'C:\\xampp\\htdocs\\game\\app\\Controllers\\Questoes.php', 10)
+ 2 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\Questoes->__construct()
+ 3 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-14 22:08:03 --> ErrorException: Undefined variable $questao
+in APPPATH\Controllers\Questoes.php on line 29.
+ 1 APPPATH\Controllers\Questoes.php(29): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $questao', 'C:\\xampp\\htdocs\\game\\app\\Controllers\\Questoes.php', 29)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Questoes->processar_respostas()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Questoes))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-14 22:11:51 --> ErrorException: Undefined variable $request
+in APPPATH\Controllers\Questoes.php on line 26.
+ 1 APPPATH\Controllers\Questoes.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $request', 'C:\\xampp\\htdocs\\game\\app\\Controllers\\Questoes.php', 26)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Questoes->processar_respostas()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Questoes))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-14 22:12:20 --> ErrorException: Undefined variable $request
+in APPPATH\Controllers\Questoes.php on line 26.
+ 1 APPPATH\Controllers\Questoes.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $request', 'C:\\xampp\\htdocs\\game\\app\\Controllers\\Questoes.php', 26)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Questoes->processar_respostas()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Questoes))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-14 22:21:55 --> ErrorException: Undefined array key "resposta_correta"
+in APPPATH\Views\questoes.php on line 155.
+ 1 APPPATH\Views\questoes.php(155): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "resposta_correta"', 'C:\\xampp\\htdocs\\game\\app\\Views\\questoes.php', 155)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\game\\app\\Views\\questoes.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('questoes', [], true)
+ 5 APPPATH\Controllers\Questoes.php(18): view('questoes', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Questoes->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Questoes))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-14 22:22:49 --> ErrorException: Undefined array key "resposta_correta"
+in APPPATH\Views\questoes.php on line 155.
+ 1 APPPATH\Views\questoes.php(155): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "resposta_correta"', 'C:\\xampp\\htdocs\\game\\app\\Views\\questoes.php', 155)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\game\\app\\Views\\questoes.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('questoes', [], true)
+ 5 APPPATH\Controllers\Questoes.php(18): view('questoes', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Questoes->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Questoes))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-14 22:25:09 --> ErrorException: Undefined variable $request
+in APPPATH\Controllers\Questoes.php on line 26.
+ 1 APPPATH\Controllers\Questoes.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $request', 'C:\\xampp\\htdocs\\game\\app\\Controllers\\Questoes.php', 26)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Questoes->processar_respostas()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Questoes))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-14 22:25:32 --> ErrorException: Undefined variable $request
+in APPPATH\Controllers\Questoes.php on line 26.
+ 1 APPPATH\Controllers\Questoes.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $request', 'C:\\xampp\\htdocs\\game\\app\\Controllers\\Questoes.php', 26)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Questoes->processar_respostas()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Questoes))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-14 22:27:09 --> ErrorException: Undefined variable $request
+in APPPATH\Controllers\Questoes.php on line 26.
+ 1 APPPATH\Controllers\Questoes.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $request', 'C:\\xampp\\htdocs\\game\\app\\Controllers\\Questoes.php', 26)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Questoes->processar_respostas()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Questoes))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-14 22:27:15 --> ErrorException: Undefined variable $request
+in APPPATH\Controllers\Questoes.php on line 26.
+ 1 APPPATH\Controllers\Questoes.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $request', 'C:\\xampp\\htdocs\\game\\app\\Controllers\\Questoes.php', 26)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Questoes->processar_respostas()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Questoes))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-14 22:27:18 --> ErrorException: Undefined variable $request
+in APPPATH\Controllers\Questoes.php on line 26.
+ 1 APPPATH\Controllers\Questoes.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $request', 'C:\\xampp\\htdocs\\game\\app\\Controllers\\Questoes.php', 26)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Questoes->processar_respostas()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Questoes))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-14 22:27:20 --> ErrorException: Undefined variable $request
+in APPPATH\Controllers\Questoes.php on line 26.
+ 1 APPPATH\Controllers\Questoes.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $request', 'C:\\xampp\\htdocs\\game\\app\\Controllers\\Questoes.php', 26)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Questoes->processar_respostas()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Questoes))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-14 22:27:24 --> ErrorException: Undefined variable $request
+in APPPATH\Controllers\Questoes.php on line 26.
+ 1 APPPATH\Controllers\Questoes.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $request', 'C:\\xampp\\htdocs\\game\\app\\Controllers\\Questoes.php', 26)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Questoes->processar_respostas()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Questoes))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-14 22:27:27 --> ErrorException: Undefined variable $request
+in APPPATH\Controllers\Questoes.php on line 26.
+ 1 APPPATH\Controllers\Questoes.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $request', 'C:\\xampp\\htdocs\\game\\app\\Controllers\\Questoes.php', 26)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Questoes->processar_respostas()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Questoes))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-14 22:27:33 --> ErrorException: Undefined variable $request
+in APPPATH\Controllers\Questoes.php on line 26.
+ 1 APPPATH\Controllers\Questoes.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $request', 'C:\\xampp\\htdocs\\game\\app\\Controllers\\Questoes.php', 26)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Questoes->processar_respostas()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Questoes))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-14 22:29:22 --> ErrorException: Undefined variable $request
+in APPPATH\Controllers\Questoes.php on line 26.
+ 1 APPPATH\Controllers\Questoes.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $request', 'C:\\xampp\\htdocs\\game\\app\\Controllers\\Questoes.php', 26)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Questoes->processar_respostas()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Questoes))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-14 22:29:28 --> ErrorException: Undefined variable $request
+in APPPATH\Controllers\Questoes.php on line 26.
+ 1 APPPATH\Controllers\Questoes.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $request', 'C:\\xampp\\htdocs\\game\\app\\Controllers\\Questoes.php', 26)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Questoes->processar_respostas()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Questoes))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-14 22:31:06 --> ErrorException: Undefined variable $request
+in APPPATH\Controllers\Questoes.php on line 26.
+ 1 APPPATH\Controllers\Questoes.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $request', 'C:\\xampp\\htdocs\\game\\app\\Controllers\\Questoes.php', 26)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Questoes->processar_respostas()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Questoes))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-14 22:33:10 --> ErrorException: Undefined variable $request
+in APPPATH\Controllers\Questoes.php on line 26.
+ 1 APPPATH\Controllers\Questoes.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $request', 'C:\\xampp\\htdocs\\game\\app\\Controllers\\Questoes.php', 26)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Questoes->processar_respostas()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Questoes))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-14 22:35:38 --> ErrorException: Undefined variable $request
+in APPPATH\Controllers\Questoes.php on line 26.
+ 1 APPPATH\Controllers\Questoes.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $request', 'C:\\xampp\\htdocs\\game\\app\\Controllers\\Questoes.php', 26)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Questoes->processar_respostas()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Questoes))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-14 22:36:33 --> ErrorException: Undefined variable $questao
+in APPPATH\Controllers\Questoes.php on line 29.
+ 1 APPPATH\Controllers\Questoes.php(29): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $questao', 'C:\\xampp\\htdocs\\game\\app\\Controllers\\Questoes.php', 29)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Questoes->processar_respostas()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Questoes))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-14 22:37:23 --> BadMethodCallException: Call to undefined method App\Models\QuestoesModel::getQuestaoById
+in SYSTEMPATH\Model.php on line 874.
+ 1 APPPATH\Controllers\Questoes.php(27): CodeIgniter\Model->__call('getQuestaoById', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Questoes->processar_respostas()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Questoes))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-14 22:38:24 --> ErrorException: Trying to access array offset on value of type null
+in APPPATH\Controllers\Questoes.php on line 30.
+ 1 APPPATH\Controllers\Questoes.php(30): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\game\\app\\Controllers\\Questoes.php', 30)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Questoes->processar_respostas()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Questoes))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-14 22:39:20 --> ErrorException: Undefined array key "resposta_correta"
+in APPPATH\Controllers\Questoes.php on line 30.
+ 1 APPPATH\Controllers\Questoes.php(30): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "resposta_correta"', 'C:\\xampp\\htdocs\\game\\app\\Controllers\\Questoes.php', 30)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Questoes->processar_respostas()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Questoes))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-14 22:40:39 --> ErrorException: Undefined array key "resposta_correta"
+in APPPATH\Controllers\Questoes.php on line 30.
+ 1 APPPATH\Controllers\Questoes.php(30): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "resposta_correta"', 'C:\\xampp\\htdocs\\game\\app\\Controllers\\Questoes.php', 30)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Questoes->processar_respostas()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Questoes))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-14 22:40:41 --> ErrorException: Undefined array key "resposta_correta"
+in APPPATH\Controllers\Questoes.php on line 30.
+ 1 APPPATH\Controllers\Questoes.php(30): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "resposta_correta"', 'C:\\xampp\\htdocs\\game\\app\\Controllers\\Questoes.php', 30)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Questoes->processar_respostas()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Questoes))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-14 22:41:03 --> ErrorException: Undefined array key "opcaoa_correta"
+in APPPATH\Controllers\Questoes.php on line 30.
+ 1 APPPATH\Controllers\Questoes.php(30): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "opcaoa_correta"', 'C:\\xampp\\htdocs\\game\\app\\Controllers\\Questoes.php', 30)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Questoes->processar_respostas()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Questoes))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-14 22:41:16 --> ErrorException: Undefined array key "opcao_correta"
+in APPPATH\Controllers\Questoes.php on line 30.
+ 1 APPPATH\Controllers\Questoes.php(30): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "opcao_correta"', 'C:\\xampp\\htdocs\\game\\app\\Controllers\\Questoes.php', 30)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Questoes->processar_respostas()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Questoes))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-14 22:42:21 --> ErrorException: Undefined array key "opcao_correta"
+in APPPATH\Controllers\Questoes.php on line 30.
+ 1 APPPATH\Controllers\Questoes.php(30): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "opcao_correta"', 'C:\\xampp\\htdocs\\game\\app\\Controllers\\Questoes.php', 30)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Questoes->processar_respostas()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Questoes))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-14 22:43:50 --> ErrorException: Undefined array key "opcao_correta"
+in APPPATH\Controllers\Questoes.php on line 30.
+ 1 APPPATH\Controllers\Questoes.php(30): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "opcao_correta"', 'C:\\xampp\\htdocs\\game\\app\\Controllers\\Questoes.php', 30)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Questoes->processar_respostas()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Questoes))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-14 22:45:38 --> ErrorException: Undefined array key "opcao_correta"
+in APPPATH\Controllers\Questoes.php on line 30.
+ 1 APPPATH\Controllers\Questoes.php(30): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "opcao_correta"', 'C:\\xampp\\htdocs\\game\\app\\Controllers\\Questoes.php', 30)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Questoes->processar_respostas()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Questoes))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-14 22:45:39 --> ErrorException: Undefined array key "opcao_correta"
+in APPPATH\Controllers\Questoes.php on line 30.
+ 1 APPPATH\Controllers\Questoes.php(30): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "opcao_correta"', 'C:\\xampp\\htdocs\\game\\app\\Controllers\\Questoes.php', 30)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Questoes->processar_respostas()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Questoes))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-14 22:45:39 --> ErrorException: Undefined array key "opcao_correta"
+in APPPATH\Controllers\Questoes.php on line 30.
+ 1 APPPATH\Controllers\Questoes.php(30): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "opcao_correta"', 'C:\\xampp\\htdocs\\game\\app\\Controllers\\Questoes.php', 30)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Questoes->processar_respostas()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Questoes))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-14 22:45:39 --> ErrorException: Undefined array key "opcao_correta"
+in APPPATH\Controllers\Questoes.php on line 30.
+ 1 APPPATH\Controllers\Questoes.php(30): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "opcao_correta"', 'C:\\xampp\\htdocs\\game\\app\\Controllers\\Questoes.php', 30)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Questoes->processar_respostas()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Questoes))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-14 22:45:41 --> ErrorException: Undefined array key "opcao_correta"
+in APPPATH\Controllers\Questoes.php on line 30.
+ 1 APPPATH\Controllers\Questoes.php(30): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "opcao_correta"', 'C:\\xampp\\htdocs\\game\\app\\Controllers\\Questoes.php', 30)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Questoes->processar_respostas()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Questoes))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-14 22:57:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-14 22:59:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-14 22:59:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2024-01-14 23:06:11 --> Método processar_respostas chamado.
+DEBUG - 2024-01-14 23:08:56 --> Método processar_respostas chamado.
+DEBUG - 2024-01-14 23:12:30 --> Método processar_respostas chamado.
+DEBUG - 2024-01-14 23:12:37 --> Método processar_respostas chamado.
+DEBUG - 2024-01-14 23:12:42 --> Método processar_respostas chamado.
+DEBUG - 2024-01-14 23:14:45 --> Método processar_respostas chamado.
+DEBUG - 2024-01-14 23:15:10 --> Método processar_respostas chamado.
+DEBUG - 2024-01-14 23:15:16 --> Método processar_respostas chamado.
+DEBUG - 2024-01-14 23:15:18 --> Método processar_respostas chamado.
+DEBUG - 2024-01-14 23:15:19 --> Método processar_respostas chamado.
+DEBUG - 2024-01-14 23:15:20 --> Método processar_respostas chamado.
+DEBUG - 2024-01-14 23:15:25 --> Método processar_respostas chamado.
+DEBUG - 2024-01-14 23:15:30 --> Método processar_respostas chamado.
+DEBUG - 2024-01-14 23:16:22 --> Método processar_respostas chamado.
+DEBUG - 2024-01-14 23:18:12 --> Método processar_respostas chamado.
+DEBUG - 2024-01-14 23:18:15 --> Método processar_respostas chamado.
+DEBUG - 2024-01-14 23:18:16 --> Método processar_respostas chamado.
+DEBUG - 2024-01-14 23:18:19 --> Método processar_respostas chamado.
+DEBUG - 2024-01-14 23:18:22 --> Método processar_respostas chamado.
+DEBUG - 2024-01-14 23:19:06 --> Método processar_respostas chamado.
+DEBUG - 2024-01-14 23:22:12 --> Método processar_respostas chamado.
+CRITICAL - 2024-01-14 23:25:30 --> ErrorException: Undefined array key "opcao_correta"
+in APPPATH\Controllers\Questoes.php on line 28.
+ 1 APPPATH\Controllers\Questoes.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "opcao_correta"', 'C:\\xampp\\htdocs\\game\\app\\Controllers\\Questoes.php', 28)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Questoes->processar_respostas()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Questoes))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-14 23:51:08 --> ErrorException: Undefined array key "opcao_correta"
+in APPPATH\Controllers\Questoes.php on line 31.
+ 1 APPPATH\Controllers\Questoes.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "opcao_correta"', 'C:\\xampp\\htdocs\\game\\app\\Controllers\\Questoes.php', 31)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Questoes->processar_respostas()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Questoes))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-14 23:52:44 --> ErrorException: Undefined array key "opcao_correta"
+in APPPATH\Controllers\Questoes.php on line 30.
+ 1 APPPATH\Controllers\Questoes.php(30): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "opcao_correta"', 'C:\\xampp\\htdocs\\game\\app\\Controllers\\Questoes.php', 30)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Questoes->processar_respostas()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Questoes))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-14 23:54:17 --> Error: Undefined constant "App\Controllers\console"
+in APPPATH\Controllers\Questoes.php on line 28.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Questoes->processar_respostas()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Questoes))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-14 23:54:18 --> Error: Undefined constant "App\Controllers\console"
+in APPPATH\Controllers\Questoes.php on line 28.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Questoes->processar_respostas()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Questoes))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-14 23:54:25 --> Error: Undefined constant "App\Controllers\console"
+in APPPATH\Controllers\Questoes.php on line 28.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Questoes->processar_respostas()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Questoes))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-14 23:55:30 --> Error: Undefined constant "App\Controllers\console"
+in APPPATH\Controllers\Questoes.php on line 28.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Questoes->processar_respostas()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Questoes))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

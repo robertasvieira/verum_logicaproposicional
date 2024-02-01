@@ -1,0 +1,32 @@
+INFO - 2024-01-15 00:02:14 --> ID da Questão: 
+INFO - 2024-01-15 00:06:36 --> ID da Questão: 
+CRITICAL - 2024-01-15 00:06:36 --> ErrorException: Trying to access array offset on value of type null
+in APPPATH\Controllers\Questoes.php on line 30.
+ 1 APPPATH\Controllers\Questoes.php(30): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\game\\app\\Controllers\\Questoes.php', 30)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Questoes->processar_respostas()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Questoes))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-15 00:06:52 --> ID da Questão: 
+INFO - 2024-01-15 00:07:45 --> ID da Questão: 
+INFO - 2024-01-15 00:08:19 --> ID da Questão: 
+INFO - 2024-01-15 00:16:11 --> ID da Questão: 
+INFO - 2024-01-15 00:24:29 --> ID da Questão: 
+INFO - 2024-01-15 00:57:17 --> ID da Questão: 
+INFO - 2024-01-15 00:58:38 --> ID da Questão: 
+INFO - 2024-01-15 00:58:49 --> ID da Questão: 
+CRITICAL - 2024-01-15 01:10:19 --> ArgumentCountError: Too few arguments to function App\Models\QuestoesModel::getQuestoes(), 0 passed in C:\xampp\htdocs\game\app\Controllers\Questoes.php on line 18 and exactly 1 expected
+in APPPATH\Models\QuestoesModel.php on line 13.
+ 1 APPPATH\Controllers\Questoes.php(18): App\Models\QuestoesModel->getQuestoes()
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Questoes->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Questoes))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-15 01:10:53 --> BadMethodCallException: Call to undefined method App\Models\QuestoesModel::getQuestoes
+in SYSTEMPATH\Model.php on line 874.
+ 1 APPPATH\Controllers\Questoes.php(18): CodeIgniter\Model->__call('getQuestoes', [])
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Questoes->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Questoes))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-15 01:11:49 --> ID da Questão: 

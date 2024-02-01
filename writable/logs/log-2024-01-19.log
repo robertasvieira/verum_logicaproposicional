@@ -1,0 +1,145 @@
+CRITICAL - 2024-01-19 00:44:15 --> Error: Class "App\Controllers\AnotacoesModel" not found
+in APPPATH\Controllers\Fases.php on line 8.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Fases->fase1()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Fases))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-19 00:44:56 --> ErrorException: Undefined variable $avaliacao
+in APPPATH\Views\fase1.php on line 270.
+ 1 APPPATH\Views\fase1.php(270): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $avaliacao', 'C:\\xampp\\htdocs\\verum\\app\\Views\\fase1.php', 270)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\verum\\app\\Views\\fase1.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('fase1', [], true)
+ 5 APPPATH\Controllers\Fases.php(14): view('fase1', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Fases->fase1()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Fases))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-19 22:07:53 --> ErrorException: Undefined variable $anotacao
+in APPPATH\Views\fase1.php on line 281.
+ 1 APPPATH\Views\fase1.php(281): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $anotacao', 'C:\\xampp\\htdocs\\verum\\app\\Views\\fase1.php', 281)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\verum\\app\\Views\\fase1.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('fase1', [], true)
+ 5 APPPATH\Controllers\Fases.php(14): view('fase1', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Fases->fase1()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Fases))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-19 23:01:08 --> ParseError: syntax error, unexpected end of file
+in APPPATH\Views\fase1.php on line 423.
+ 1 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('fase1', [], true)
+ 3 APPPATH\Controllers\Fases.php(14): view('fase1', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Fases->fase1()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Fases))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-19 23:03:05 --> ParseError: syntax error, unexpected end of file
+in APPPATH\Views\fase1.php on line 417.
+ 1 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('fase1', [], true)
+ 3 APPPATH\Controllers\Fases.php(14): view('fase1', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Fases->fase1()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Fases))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-19 23:03:24 --> ParseError: syntax error, unexpected end of file
+in APPPATH\Views\fase1.php on line 415.
+ 1 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('fase1', [], true)
+ 3 APPPATH\Controllers\Fases.php(14): view('fase1', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Fases->fase1()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Fases))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-19 23:04:13 --> ParseError: syntax error, unexpected end of file
+in APPPATH\Views\fase1.php on line 415.
+ 1 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('fase1', [], true)
+ 3 APPPATH\Controllers\Fases.php(14): view('fase1', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Fases->fase1()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Fases))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-19 23:04:16 --> ParseError: syntax error, unexpected end of file
+in APPPATH\Views\fase1.php on line 415.
+ 1 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('fase1', [], true)
+ 3 APPPATH\Controllers\Fases.php(14): view('fase1', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Fases->fase1()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Fases))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-19 23:04:16 --> ParseError: syntax error, unexpected end of file
+in APPPATH\Views\fase1.php on line 415.
+ 1 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('fase1', [], true)
+ 3 APPPATH\Controllers\Fases.php(14): view('fase1', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Fases->fase1()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Fases))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-19 23:04:17 --> ParseError: syntax error, unexpected end of file
+in APPPATH\Views\fase1.php on line 415.
+ 1 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('fase1', [], true)
+ 3 APPPATH\Controllers\Fases.php(14): view('fase1', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Fases->fase1()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Fases))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-19 23:05:47 --> ParseError: syntax error, unexpected end of file
+in APPPATH\Views\fase1.php on line 391.
+ 1 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('fase1', [], true)
+ 3 APPPATH\Controllers\Fases.php(14): view('fase1', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Fases->fase1()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Fases))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-19 23:05:51 --> ParseError: syntax error, unexpected end of file
+in APPPATH\Views\fase1.php on line 391.
+ 1 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('fase1', [], true)
+ 3 APPPATH\Controllers\Fases.php(14): view('fase1', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Fases->fase1()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Fases))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-19 23:05:51 --> ParseError: syntax error, unexpected end of file
+in APPPATH\Views\fase1.php on line 391.
+ 1 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('fase1', [], true)
+ 3 APPPATH\Controllers\Fases.php(14): view('fase1', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Fases->fase1()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Fases))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-19 23:05:51 --> ParseError: syntax error, unexpected end of file
+in APPPATH\Views\fase1.php on line 391.
+ 1 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('fase1', [], true)
+ 3 APPPATH\Controllers\Fases.php(14): view('fase1', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Fases->fase1()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Fases))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-19 23:05:51 --> ParseError: syntax error, unexpected end of file
+in APPPATH\Views\fase1.php on line 391.
+ 1 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('fase1', [], true)
+ 3 APPPATH\Controllers\Fases.php(14): view('fase1', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Fases->fase1()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Fases))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-19 23:14:24 --> ParseError: syntax error, unexpected end of file
+in APPPATH\Views\fase1.php on line 422.
+ 1 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('fase1', [], true)
+ 3 APPPATH\Controllers\Fases.php(14): view('fase1', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Fases->fase1()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Fases))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

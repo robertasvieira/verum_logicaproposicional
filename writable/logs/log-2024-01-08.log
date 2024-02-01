@@ -1,0 +1,614 @@
+CRITICAL - 2024-01-08 02:54:50 --> ErrorException: Undefined property: App\Controllers\Usuario::$usuarioModel
+in APPPATH\Controllers\Usuario.php on line 26.
+ 1 APPPATH\Controllers\Usuario.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Usuario::$usuarioModel', 'C:\\xampp\\htdocs\\game\\app\\Controllers\\Usuario.php', 26)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Usuario->processar_cadastro()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-08 02:57:48 --> ErrorException: Undefined property: App\Controllers\Usuario::$usuarioModel
+in APPPATH\Controllers\Usuario.php on line 28.
+ 1 APPPATH\Controllers\Usuario.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Usuario::$usuarioModel', 'C:\\xampp\\htdocs\\game\\app\\Controllers\\Usuario.php', 28)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Usuario->processar_cadastro()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-08 02:57:56 --> ErrorException: Undefined property: App\Controllers\Usuario::$usuarioModel
+in APPPATH\Controllers\Usuario.php on line 28.
+ 1 APPPATH\Controllers\Usuario.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Usuario::$usuarioModel', 'C:\\xampp\\htdocs\\game\\app\\Controllers\\Usuario.php', 28)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Usuario->processar_cadastro()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-08 02:58:12 --> ErrorException: Undefined property: App\Controllers\Usuario::$usuarioModel
+in APPPATH\Controllers\Usuario.php on line 28.
+ 1 APPPATH\Controllers\Usuario.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Usuario::$usuarioModel', 'C:\\xampp\\htdocs\\game\\app\\Controllers\\Usuario.php', 28)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Usuario->processar_cadastro()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-08 02:58:36 --> Error connecting to the database: mysqli_sql_exception: Access denied for user ''@'localhost' (using password: NO) in C:\xampp\htdocs\game\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 C:\xampp\htdocs\game\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('localhost', '', Object(SensitiveParameterValue), '', 3306, '', 0)
+#1 C:\xampp\htdocs\game\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\game\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\game\system\Database\BaseBuilder.php(2302): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 C:\xampp\htdocs\game\app\Models\UsuarioModel.php(14): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\game\app\Controllers\Usuario.php(34): App\Models\UsuarioModel->cadastrarUsuario(Array)
+#6 C:\xampp\htdocs\game\system\CodeIgniter.php(941): App\Controllers\Usuario->processar_cadastro()
+#7 C:\xampp\htdocs\game\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+#8 C:\xampp\htdocs\game\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\game\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user ''@'localhost' (using password: NO) in C:\xampp\htdocs\game\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\xampp\htdocs\game\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\game\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\game\system\Database\BaseBuilder.php(2302): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#3 C:\xampp\htdocs\game\app\Models\UsuarioModel.php(14): CodeIgniter\Database\BaseBuilder->insert(Array)
+#4 C:\xampp\htdocs\game\app\Controllers\Usuario.php(34): App\Models\UsuarioModel->cadastrarUsuario(Array)
+#5 C:\xampp\htdocs\game\system\CodeIgniter.php(941): App\Controllers\Usuario->processar_cadastro()
+#6 C:\xampp\htdocs\game\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+#7 C:\xampp\htdocs\game\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\game\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-08 02:58:36 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user ''@'localhost' (using password: NO)
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(2302): CodeIgniter\Database\BaseConnection->query('INSERT INTO `usuarios` (`nome_real`, `nome_falso`, `email`, `telefone`, `senha`) VALUES (:nome_real:, :nome_falso:, :email:, :telefone:, :senha:)', [...], false)
+ 3 APPPATH\Models\UsuarioModel.php(14): CodeIgniter\Database\BaseBuilder->insert([...])
+ 4 APPPATH\Controllers\Usuario.php(34): App\Models\UsuarioModel->cadastrarUsuario([...])
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Usuario->processar_cadastro()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-08 03:02:40 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: YES) in C:\xampp\htdocs\game\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 C:\xampp\htdocs\game\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'game', 3306, '', 0)
+#1 C:\xampp\htdocs\game\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\game\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\game\system\Database\BaseBuilder.php(2302): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 C:\xampp\htdocs\game\app\Models\UsuarioModel.php(14): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\game\app\Controllers\Usuario.php(34): App\Models\UsuarioModel->cadastrarUsuario(Array)
+#6 C:\xampp\htdocs\game\system\CodeIgniter.php(941): App\Controllers\Usuario->processar_cadastro()
+#7 C:\xampp\htdocs\game\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+#8 C:\xampp\htdocs\game\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\game\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: YES) in C:\xampp\htdocs\game\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\xampp\htdocs\game\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\game\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\game\system\Database\BaseBuilder.php(2302): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#3 C:\xampp\htdocs\game\app\Models\UsuarioModel.php(14): CodeIgniter\Database\BaseBuilder->insert(Array)
+#4 C:\xampp\htdocs\game\app\Controllers\Usuario.php(34): App\Models\UsuarioModel->cadastrarUsuario(Array)
+#5 C:\xampp\htdocs\game\system\CodeIgniter.php(941): App\Controllers\Usuario->processar_cadastro()
+#6 C:\xampp\htdocs\game\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+#7 C:\xampp\htdocs\game\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\game\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-08 03:02:40 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: YES)
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(2302): CodeIgniter\Database\BaseConnection->query('INSERT INTO `usuarios` (`nome_real`, `nome_falso`, `email`, `telefone`, `senha`) VALUES (:nome_real:, :nome_falso:, :email:, :telefone:, :senha:)', [...], false)
+ 3 APPPATH\Models\UsuarioModel.php(14): CodeIgniter\Database\BaseBuilder->insert([...])
+ 4 APPPATH\Controllers\Usuario.php(34): App\Models\UsuarioModel->cadastrarUsuario([...])
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Usuario->processar_cadastro()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-08 03:02:47 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: YES) in C:\xampp\htdocs\game\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 C:\xampp\htdocs\game\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'game', 3306, '', 0)
+#1 C:\xampp\htdocs\game\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\game\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\game\system\Database\BaseBuilder.php(2302): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 C:\xampp\htdocs\game\app\Models\UsuarioModel.php(14): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\game\app\Controllers\Usuario.php(34): App\Models\UsuarioModel->cadastrarUsuario(Array)
+#6 C:\xampp\htdocs\game\system\CodeIgniter.php(941): App\Controllers\Usuario->processar_cadastro()
+#7 C:\xampp\htdocs\game\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+#8 C:\xampp\htdocs\game\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\game\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: YES) in C:\xampp\htdocs\game\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\xampp\htdocs\game\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\game\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\game\system\Database\BaseBuilder.php(2302): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#3 C:\xampp\htdocs\game\app\Models\UsuarioModel.php(14): CodeIgniter\Database\BaseBuilder->insert(Array)
+#4 C:\xampp\htdocs\game\app\Controllers\Usuario.php(34): App\Models\UsuarioModel->cadastrarUsuario(Array)
+#5 C:\xampp\htdocs\game\system\CodeIgniter.php(941): App\Controllers\Usuario->processar_cadastro()
+#6 C:\xampp\htdocs\game\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+#7 C:\xampp\htdocs\game\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\game\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-08 03:02:47 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: YES)
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(2302): CodeIgniter\Database\BaseConnection->query('INSERT INTO `usuarios` (`nome_real`, `nome_falso`, `email`, `telefone`, `senha`) VALUES (:nome_real:, :nome_falso:, :email:, :telefone:, :senha:)', [...], false)
+ 3 APPPATH\Models\UsuarioModel.php(14): CodeIgniter\Database\BaseBuilder->insert([...])
+ 4 APPPATH\Controllers\Usuario.php(34): App\Models\UsuarioModel->cadastrarUsuario([...])
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Usuario->processar_cadastro()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-08 03:03:25 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: YES) in C:\xampp\htdocs\game\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 C:\xampp\htdocs\game\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'game', 3306, '', 0)
+#1 C:\xampp\htdocs\game\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\game\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\game\system\Database\BaseBuilder.php(2302): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 C:\xampp\htdocs\game\app\Models\UsuarioModel.php(14): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\game\app\Controllers\Usuario.php(34): App\Models\UsuarioModel->cadastrarUsuario(Array)
+#6 C:\xampp\htdocs\game\system\CodeIgniter.php(941): App\Controllers\Usuario->processar_cadastro()
+#7 C:\xampp\htdocs\game\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+#8 C:\xampp\htdocs\game\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\game\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access****denied****for****user****'****'@'localhost'****(using****password:****YES) in C:\xampp\htdocs\game\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\xampp\htdocs\game\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\game\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\game\system\Database\BaseBuilder.php(2302): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#3 C:\xampp\htdocs\game\app\Models\UsuarioModel.php(14): CodeIgniter\Database\BaseBuilder->insert(Array)
+#4 C:\xampp\htdocs\game\app\Controllers\Usuario.php(34): App\Models\UsuarioModel->cadastrarUsuario(Array)
+#5 C:\xampp\htdocs\game\system\CodeIgniter.php(941): App\Controllers\Usuario->processar_cadastro()
+#6 C:\xampp\htdocs\game\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+#7 C:\xampp\htdocs\game\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\game\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-08 03:03:25 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access****denied****for****user****'****'@'localhost'****(using****password:****YES)
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(2302): CodeIgniter\Database\BaseConnection->query('INSERT INTO `usuarios` (`nome_real`, `nome_falso`, `email`, `telefone`, `senha`) VALUES (:nome_real:, :nome_falso:, :email:, :telefone:, :senha:)', [...], false)
+ 3 APPPATH\Models\UsuarioModel.php(14): CodeIgniter\Database\BaseBuilder->insert([...])
+ 4 APPPATH\Controllers\Usuario.php(34): App\Models\UsuarioModel->cadastrarUsuario([...])
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Usuario->processar_cadastro()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-08 03:04:02 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: YES) in C:\xampp\htdocs\game\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 C:\xampp\htdocs\game\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'game', 3306, '', 0)
+#1 C:\xampp\htdocs\game\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\game\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\game\system\Database\BaseBuilder.php(2302): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 C:\xampp\htdocs\game\app\Models\UsuarioModel.php(14): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\game\app\Controllers\Usuario.php(34): App\Models\UsuarioModel->cadastrarUsuario(Array)
+#6 C:\xampp\htdocs\game\system\CodeIgniter.php(941): App\Controllers\Usuario->processar_cadastro()
+#7 C:\xampp\htdocs\game\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+#8 C:\xampp\htdocs\game\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\game\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: YES) in C:\xampp\htdocs\game\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\xampp\htdocs\game\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\game\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\game\system\Database\BaseBuilder.php(2302): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#3 C:\xampp\htdocs\game\app\Models\UsuarioModel.php(14): CodeIgniter\Database\BaseBuilder->insert(Array)
+#4 C:\xampp\htdocs\game\app\Controllers\Usuario.php(34): App\Models\UsuarioModel->cadastrarUsuario(Array)
+#5 C:\xampp\htdocs\game\system\CodeIgniter.php(941): App\Controllers\Usuario->processar_cadastro()
+#6 C:\xampp\htdocs\game\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+#7 C:\xampp\htdocs\game\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\game\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-08 03:04:02 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: YES)
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(2302): CodeIgniter\Database\BaseConnection->query('INSERT INTO `usuarios` (`nome_real`, `nome_falso`, `email`, `telefone`, `senha`) VALUES (:nome_real:, :nome_falso:, :email:, :telefone:, :senha:)', [...], false)
+ 3 APPPATH\Models\UsuarioModel.php(14): CodeIgniter\Database\BaseBuilder->insert([...])
+ 4 APPPATH\Controllers\Usuario.php(34): App\Models\UsuarioModel->cadastrarUsuario([...])
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Usuario->processar_cadastro()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-08 03:05:21 --> mysqli_sql_exception: Unknown column 'telefone' in 'field list' in C:\xampp\htdocs\game\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\game\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `us...', 0)
+#1 C:\xampp\htdocs\game\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 C:\xampp\htdocs\game\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 C:\xampp\htdocs\game\system\Database\BaseBuilder.php(2302): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 C:\xampp\htdocs\game\app\Models\UsuarioModel.php(14): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\game\app\Controllers\Usuario.php(34): App\Models\UsuarioModel->cadastrarUsuario(Array)
+#6 C:\xampp\htdocs\game\system\CodeIgniter.php(941): App\Controllers\Usuario->processar_cadastro()
+#7 C:\xampp\htdocs\game\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+#8 C:\xampp\htdocs\game\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\game\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-01-08 03:05:21 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'telefone' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2302): CodeIgniter\Database\BaseConnection->query('INSERT INTO `usuarios` (`nome_real`, `nome_falso`, `email`, `telefone`, `senha`) VALUES (:nome_real:, :nome_falso:, :email:, :telefone:, :senha:)', [...], false)
+ 2 APPPATH\Models\UsuarioModel.php(14): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\Usuario.php(34): App\Models\UsuarioModel->cadastrarUsuario([...])
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Usuario->processar_cadastro()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-08 03:05:21 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'telefone' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `usuarios` (`nome_real`, `nome_falso`, `email`, `telefone`, `senha`) VALUES (\'Roberta Vieira\', \'Enola Holmes\', \'articular@gmail.com\', \'jgnfverjeviorav\', \'fdhshs\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `usuarios` (`nome_real`, `nome_falso`, `email`, `telefone`, `senha`) VALUES (\'Roberta Vieira\', \'Enola Holmes\', \'articular@gmail.com\', \'jgnfverjeviorav\', \'fdhshs\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2302): CodeIgniter\Database\BaseConnection->query('INSERT INTO `usuarios` (`nome_real`, `nome_falso`, `email`, `telefone`, `senha`) VALUES (:nome_real:, :nome_falso:, :email:, :telefone:, :senha:)', [...], false)
+ 4 APPPATH\Models\UsuarioModel.php(14): CodeIgniter\Database\BaseBuilder->insert([...])
+ 5 APPPATH\Controllers\Usuario.php(34): App\Models\UsuarioModel->cadastrarUsuario([...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Usuario->processar_cadastro()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-08 03:05:21 --> [Caused by] mysqli_sql_exception: Unknown column 'telefone' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `usuarios` (`nome_real`, `nome_falso`, `email`, `telefone`, `senha`) VALUES (\'Roberta Vieira\', \'Enola Holmes\', \'articular@gmail.com\', \'jgnfverjeviorav\', \'fdhshs\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `usuarios` (`nome_real`, `nome_falso`, `email`, `telefone`, `senha`) VALUES (\'Roberta Vieira\', \'Enola Holmes\', \'articular@gmail.com\', \'jgnfverjeviorav\', \'fdhshs\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `usuarios` (`nome_real`, `nome_falso`, `email`, `telefone`, `senha`) VALUES (\'Roberta Vieira\', \'Enola Holmes\', \'articular@gmail.com\', \'jgnfverjeviorav\', \'fdhshs\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2302): CodeIgniter\Database\BaseConnection->query('INSERT INTO `usuarios` (`nome_real`, `nome_falso`, `email`, `telefone`, `senha`) VALUES (:nome_real:, :nome_falso:, :email:, :telefone:, :senha:)', [...], false)
+ 5 APPPATH\Models\UsuarioModel.php(14): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\Usuario.php(34): App\Models\UsuarioModel->cadastrarUsuario([...])
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Usuario->processar_cadastro()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-08 03:38:47 --> Error: Class "App\Models\QuestoesModel" not found
+in APPPATH\Controllers\Questoes.php on line 12.
+ 1 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\Questoes->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-08 22:37:56 --> ErrorException: Undefined variable $questoes
+in APPPATH\Views\questoes.php on line 63.
+ 1 APPPATH\Views\questoes.php(63): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $questoes', 'C:\\xampp\\htdocs\\game\\app\\Views\\questoes.php', 63)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\game\\app\\Views\\questoes.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('questoes', [], true)
+ 5 APPPATH\Controllers\Usuario.php(36): view('questoes')
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Usuario->processar_cadastro()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-08 22:40:08 --> ErrorException: Undefined variable $questoes
+in APPPATH\Views\questoes.php on line 63.
+ 1 APPPATH\Views\questoes.php(63): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $questoes', 'C:\\xampp\\htdocs\\game\\app\\Views\\questoes.php', 63)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\game\\app\\Views\\questoes.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('questoes', [], true)
+ 5 APPPATH\Controllers\Usuario.php(36): view('questoes')
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Usuario->processar_cadastro()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-08 22:40:13 --> ErrorException: Undefined variable $questoes
+in APPPATH\Views\questoes.php on line 63.
+ 1 APPPATH\Views\questoes.php(63): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $questoes', 'C:\\xampp\\htdocs\\game\\app\\Views\\questoes.php', 63)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\game\\app\\Views\\questoes.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('questoes', [], true)
+ 5 APPPATH\Controllers\Usuario.php(36): view('questoes')
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Usuario->processar_cadastro()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-08 22:44:02 --> ErrorException: Undefined variable $questoes
+in APPPATH\Views\questoes.php on line 63.
+ 1 APPPATH\Views\questoes.php(63): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $questoes', 'C:\\xampp\\htdocs\\game\\app\\Views\\questoes.php', 63)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\game\\app\\Views\\questoes.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('questoes', [], true)
+ 5 APPPATH\Controllers\Usuario.php(36): view('questoes')
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Usuario->processar_cadastro()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-08 22:44:17 --> ErrorException: Undefined variable $questoes
+in APPPATH\Views\questoes.php on line 63.
+ 1 APPPATH\Views\questoes.php(63): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $questoes', 'C:\\xampp\\htdocs\\game\\app\\Views\\questoes.php', 63)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\game\\app\\Views\\questoes.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('questoes', [], true)
+ 5 APPPATH\Controllers\Usuario.php(36): view('questoes')
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Usuario->processar_cadastro()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-08 22:50:02 --> ErrorException: Undefined variable $questoes
+in APPPATH\Views\questoes.php on line 63.
+ 1 APPPATH\Views\questoes.php(63): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $questoes', 'C:\\xampp\\htdocs\\game\\app\\Views\\questoes.php', 63)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\game\\app\\Views\\questoes.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('questoes', [], true)
+ 5 APPPATH\Controllers\Usuario.php(36): view('questoes')
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Usuario->processar_cadastro()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-08 22:50:31 --> ErrorException: Undefined variable $questoes
+in APPPATH\Views\questoes.php on line 63.
+ 1 APPPATH\Views\questoes.php(63): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $questoes', 'C:\\xampp\\htdocs\\game\\app\\Views\\questoes.php', 63)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\game\\app\\Views\\questoes.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('questoes', [], true)
+ 5 APPPATH\Controllers\Usuario.php(36): view('questoes')
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Usuario->processar_cadastro()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-08 22:50:52 --> ErrorException: Undefined variable $questoes
+in APPPATH\Views\questoes.php on line 63.
+ 1 APPPATH\Views\questoes.php(63): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $questoes', 'C:\\xampp\\htdocs\\game\\app\\Views\\questoes.php', 63)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\game\\app\\Views\\questoes.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('questoes', [], true)
+ 5 APPPATH\Controllers\Usuario.php(36): view('questoes')
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Usuario->processar_cadastro()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-08 22:54:13 --> ErrorException: Undefined variable $questoes
+in APPPATH\Views\questoes.php on line 63.
+ 1 APPPATH\Views\questoes.php(63): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $questoes', 'C:\\xampp\\htdocs\\game\\app\\Views\\questoes.php', 63)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\game\\app\\Views\\questoes.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('questoes', [], true)
+ 5 APPPATH\Controllers\Usuario.php(36): view('questoes')
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Usuario->processar_cadastro()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-08 22:55:52 --> ErrorException: Undefined variable $questoes
+in APPPATH\Views\questoes.php on line 63.
+ 1 APPPATH\Views\questoes.php(63): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $questoes', 'C:\\xampp\\htdocs\\game\\app\\Views\\questoes.php', 63)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\game\\app\\Views\\questoes.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('questoes', [], true)
+ 5 APPPATH\Controllers\Usuario.php(36): view('questoes')
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Usuario->processar_cadastro()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-08 22:55:56 --> ErrorException: Undefined variable $questoes
+in APPPATH\Views\questoes.php on line 63.
+ 1 APPPATH\Views\questoes.php(63): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $questoes', 'C:\\xampp\\htdocs\\game\\app\\Views\\questoes.php', 63)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\game\\app\\Views\\questoes.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('questoes', [], true)
+ 5 APPPATH\Controllers\Usuario.php(36): view('questoes')
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Usuario->processar_cadastro()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-08 22:57:51 --> ErrorException: Undefined variable $questoes
+in APPPATH\Views\questoes.php on line 63.
+ 1 APPPATH\Views\questoes.php(63): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $questoes', 'C:\\xampp\\htdocs\\game\\app\\Views\\questoes.php', 63)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\game\\app\\Views\\questoes.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('questoes', [], true)
+ 5 APPPATH\Controllers\Usuario.php(36): view('questoes')
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Usuario->processar_cadastro()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-08 23:00:34 --> ErrorException: Undefined variable $questoes
+in APPPATH\Views\questoes.php on line 63.
+ 1 APPPATH\Views\questoes.php(63): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $questoes', 'C:\\xampp\\htdocs\\game\\app\\Views\\questoes.php', 63)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\game\\app\\Views\\questoes.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('questoes', [], true)
+ 5 APPPATH\Controllers\Usuario.php(36): view('questoes')
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Usuario->processar_cadastro()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-08 23:03:58 --> ErrorException: Undefined variable $questoes
+in APPPATH\Views\questoes.php on line 63.
+ 1 APPPATH\Views\questoes.php(63): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $questoes', 'C:\\xampp\\htdocs\\game\\app\\Views\\questoes.php', 63)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\game\\app\\Views\\questoes.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('questoes', [], true)
+ 5 APPPATH\Controllers\Usuario.php(36): view('questoes')
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Usuario->processar_cadastro()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-08 23:06:46 --> ErrorException: Undefined variable $questoes
+in APPPATH\Views\questoes.php on line 63.
+ 1 APPPATH\Views\questoes.php(63): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $questoes', 'C:\\xampp\\htdocs\\game\\app\\Views\\questoes.php', 63)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\game\\app\\Views\\questoes.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('questoes', [], true)
+ 5 APPPATH\Controllers\Usuario.php(36): view('questoes')
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Usuario->processar_cadastro()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-08 23:08:20 --> ErrorException: Undefined variable $questoes
+in APPPATH\Views\questoes.php on line 63.
+ 1 APPPATH\Views\questoes.php(63): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $questoes', 'C:\\xampp\\htdocs\\game\\app\\Views\\questoes.php', 63)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\game\\app\\Views\\questoes.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('questoes', [], true)
+ 5 APPPATH\Controllers\Usuario.php(36): view('questoes')
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Usuario->processar_cadastro()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-08 23:08:22 --> ErrorException: Undefined variable $questoes
+in APPPATH\Views\questoes.php on line 63.
+ 1 APPPATH\Views\questoes.php(63): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $questoes', 'C:\\xampp\\htdocs\\game\\app\\Views\\questoes.php', 63)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\game\\app\\Views\\questoes.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('questoes', [], true)
+ 5 APPPATH\Controllers\Usuario.php(36): view('questoes')
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Usuario->processar_cadastro()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-08 23:09:33 --> ErrorException: Undefined variable $questoes
+in APPPATH\Views\questoes.php on line 63.
+ 1 APPPATH\Views\questoes.php(63): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $questoes', 'C:\\xampp\\htdocs\\game\\app\\Views\\questoes.php', 63)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\game\\app\\Views\\questoes.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('questoes', [], true)
+ 5 APPPATH\Controllers\Usuario.php(36): view('questoes')
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Usuario->processar_cadastro()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-08 23:11:15 --> ErrorException: Undefined variable $questoes
+in APPPATH\Views\questoes.php on line 63.
+ 1 APPPATH\Views\questoes.php(63): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $questoes', 'C:\\xampp\\htdocs\\game\\app\\Views\\questoes.php', 63)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\game\\app\\Views\\questoes.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('questoes', [], true)
+ 5 APPPATH\Controllers\Usuario.php(36): view('questoes')
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Usuario->processar_cadastro()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-08 23:11:21 --> ErrorException: Undefined variable $questoes
+in APPPATH\Views\questoes.php on line 63.
+ 1 APPPATH\Views\questoes.php(63): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $questoes', 'C:\\xampp\\htdocs\\game\\app\\Views\\questoes.php', 63)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\game\\app\\Views\\questoes.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('questoes', [], true)
+ 5 APPPATH\Controllers\Usuario.php(36): view('questoes')
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Usuario->processar_cadastro()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-08 23:14:16 --> ErrorException: Undefined variable $questoes
+in APPPATH\Views\questoes.php on line 63.
+ 1 APPPATH\Views\questoes.php(63): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $questoes', 'C:\\xampp\\htdocs\\game\\app\\Views\\questoes.php', 63)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\game\\app\\Views\\questoes.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('questoes', [], true)
+ 5 APPPATH\Controllers\Usuario.php(36): view('questoes')
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Usuario->processar_cadastro()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-08 23:17:38 --> ParseError: syntax error, unexpected single-quoted string "id_questao", expecting "," or ";"
+in APPPATH\Views\questoes.php on line 68.
+ 1 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('questoes', [], true)
+ 3 APPPATH\Controllers\Usuario.php(36): view('questoes')
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Usuario->processar_cadastro()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-08 23:18:01 --> ErrorException: Undefined variable $dados
+in APPPATH\Views\questoes.php on line 63.
+ 1 APPPATH\Views\questoes.php(63): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $dados', 'C:\\xampp\\htdocs\\game\\app\\Views\\questoes.php', 63)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\game\\app\\Views\\questoes.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('questoes', [], true)
+ 5 APPPATH\Controllers\Usuario.php(36): view('questoes')
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Usuario->processar_cadastro()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-08 23:19:35 --> ErrorException: Undefined variable $data
+in APPPATH\Views\questoes.php on line 63.
+ 1 APPPATH\Views\questoes.php(63): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'C:\\xampp\\htdocs\\game\\app\\Views\\questoes.php', 63)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\game\\app\\Views\\questoes.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('questoes', [], true)
+ 5 APPPATH\Controllers\Usuario.php(36): view('questoes')
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Usuario->processar_cadastro()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-08 23:24:55 --> ErrorException: Undefined variable $data
+in APPPATH\Views\questoes.php on line 63.
+ 1 APPPATH\Views\questoes.php(63): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'C:\\xampp\\htdocs\\game\\app\\Views\\questoes.php', 63)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\game\\app\\Views\\questoes.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('questoes', [], true)
+ 5 APPPATH\Controllers\Usuario.php(36): view('questoes')
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Usuario->processar_cadastro()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-08 23:30:56 --> ErrorException: Undefined variable $data
+in APPPATH\Views\questoes.php on line 63.
+ 1 APPPATH\Views\questoes.php(63): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'C:\\xampp\\htdocs\\game\\app\\Views\\questoes.php', 63)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\game\\app\\Views\\questoes.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('questoes', [], true)
+ 5 APPPATH\Controllers\Usuario.php(36): view('questoes')
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Usuario->processar_cadastro()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-08 23:30:59 --> ErrorException: Undefined variable $data
+in APPPATH\Views\questoes.php on line 63.
+ 1 APPPATH\Views\questoes.php(63): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'C:\\xampp\\htdocs\\game\\app\\Views\\questoes.php', 63)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\game\\app\\Views\\questoes.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('questoes', [], true)
+ 5 APPPATH\Controllers\Usuario.php(36): view('questoes')
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Usuario->processar_cadastro()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-08 23:31:27 --> ErrorException: Undefined variable $questoes
+in APPPATH\Views\questoes.php on line 63.
+ 1 APPPATH\Views\questoes.php(63): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $questoes', 'C:\\xampp\\htdocs\\game\\app\\Views\\questoes.php', 63)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\game\\app\\Views\\questoes.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('questoes', [], true)
+ 5 APPPATH\Controllers\Usuario.php(36): view('questoes')
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Usuario->processar_cadastro()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-08 23:31:30 --> ErrorException: Undefined variable $questoes
+in APPPATH\Views\questoes.php on line 63.
+ 1 APPPATH\Views\questoes.php(63): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $questoes', 'C:\\xampp\\htdocs\\game\\app\\Views\\questoes.php', 63)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\game\\app\\Views\\questoes.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('questoes', [], true)
+ 5 APPPATH\Controllers\Usuario.php(36): view('questoes')
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Usuario->processar_cadastro()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-08 23:39:06 --> ErrorException: Undefined variable $questoes
+in APPPATH\Views\questoes.php on line 63.
+ 1 APPPATH\Views\questoes.php(63): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $questoes', 'C:\\xampp\\htdocs\\game\\app\\Views\\questoes.php', 63)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\game\\app\\Views\\questoes.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('questoes', [], true)
+ 5 APPPATH\Controllers\Usuario.php(36): view('questoes')
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Usuario->processar_cadastro()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-08 23:39:57 --> ErrorException: Undefined variable $data
+in APPPATH\Views\questoes.php on line 63.
+ 1 APPPATH\Views\questoes.php(63): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'C:\\xampp\\htdocs\\game\\app\\Views\\questoes.php', 63)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\game\\app\\Views\\questoes.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('questoes', [], true)
+ 5 APPPATH\Controllers\Usuario.php(36): view('questoes')
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Usuario->processar_cadastro()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-08 23:43:48 --> ErrorException: Undefined variable $questoes
+in APPPATH\Views\questoes.php on line 57.
+ 1 APPPATH\Views\questoes.php(57): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $questoes', 'C:\\xampp\\htdocs\\game\\app\\Views\\questoes.php', 57)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\game\\app\\Views\\questoes.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('questoes', [], true)
+ 5 APPPATH\Controllers\Usuario.php(36): view('questoes')
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Usuario->processar_cadastro()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

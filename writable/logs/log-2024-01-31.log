@@ -1,0 +1,69 @@
+ERROR - 2024-01-31 23:49:35 --> mysqli_sql_exception: Table 'verum.anotacoes' doesn't exist in C:\xampp\htdocs\verum\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\verum\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\verum\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\verum\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\verum\system\Database\BaseBuilder.php(1613): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\verum\system\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\verum\system\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\verum\app\Models\AnotacoesModel.php(18): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\verum\app\Controllers\Fases.php(11): App\Models\AnotacoesModel->readAnotacao()
+#8 C:\xampp\htdocs\verum\app\Controllers\Fases.php(15): App\Controllers\Fases->obterAnotacoes()
+#9 C:\xampp\htdocs\verum\app\Controllers\Fases.php(20): App\Controllers\Fases->carregarView('fase1')
+#10 C:\xampp\htdocs\verum\system\CodeIgniter.php(941): App\Controllers\Fases->fase1()
+#11 C:\xampp\htdocs\verum\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Fases))
+#12 C:\xampp\htdocs\verum\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 C:\xampp\htdocs\verum\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#14 {main}
+CRITICAL - 2024-01-31 23:49:35 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'verum.anotacoes' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1613): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `anotacoes`', [], false)
+ 2 SYSTEMPATH\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Models\AnotacoesModel.php(18): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH\Controllers\Fases.php(11): App\Models\AnotacoesModel->readAnotacao()
+ 6 APPPATH\Controllers\Fases.php(15): App\Controllers\Fases->obterAnotacoes()
+ 7 APPPATH\Controllers\Fases.php(20): App\Controllers\Fases->carregarView('fase1')
+ 8 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Fases->fase1()
+ 9 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Fases))
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-31 23:49:35 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'verum.anotacoes' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `anotacoes`')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `anotacoes`')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1613): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `anotacoes`', [], false)
+ 4 SYSTEMPATH\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Models\AnotacoesModel.php(18): CodeIgniter\BaseModel->findAll()
+ 7 APPPATH\Controllers\Fases.php(11): App\Models\AnotacoesModel->readAnotacao()
+ 8 APPPATH\Controllers\Fases.php(15): App\Controllers\Fases->obterAnotacoes()
+ 9 APPPATH\Controllers\Fases.php(20): App\Controllers\Fases->carregarView('fase1')
+10 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Fases->fase1()
+11 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Fases))
+12 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-31 23:49:35 --> [Caused by] mysqli_sql_exception: Table 'verum.anotacoes' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *
+FROM `anotacoes`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `anotacoes`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `anotacoes`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1613): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `anotacoes`', [], false)
+ 5 SYSTEMPATH\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Models\AnotacoesModel.php(18): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH\Controllers\Fases.php(11): App\Models\AnotacoesModel->readAnotacao()
+ 9 APPPATH\Controllers\Fases.php(15): App\Controllers\Fases->obterAnotacoes()
+10 APPPATH\Controllers\Fases.php(20): App\Controllers\Fases->carregarView('fase1')
+11 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Fases->fase1()
+12 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Fases))
+13 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

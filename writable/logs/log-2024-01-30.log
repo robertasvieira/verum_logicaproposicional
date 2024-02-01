@@ -1,0 +1,23 @@
+CRITICAL - 2024-01-30 03:05:24 --> ArgumentCountError: Too few arguments to function App\Controllers\Anotacoes::create(), 0 passed in C:\xampp\htdocs\verum\system\CodeIgniter.php on line 941 and exactly 1 expected
+in APPPATH\Controllers\Anotacoes.php on line 9.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Anotacoes->create()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anotacoes))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-30 03:08:40 --> ArgumentCountError: Too few arguments to function App\Controllers\Anotacoes::create(), 0 passed in C:\xampp\htdocs\verum\system\CodeIgniter.php on line 941 and exactly 1 expected
+in APPPATH\Controllers\Anotacoes.php on line 9.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Anotacoes->create()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Anotacoes))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-30 03:21:21 --> ErrorException: Undefined variable $anotacoes
+in APPPATH\Views\fase2.php on line 322.
+ 1 APPPATH\Views\fase2.php(322): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $anotacoes', 'C:\\xampp\\htdocs\\verum\\app\\Views\\fase2.php', 322)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\verum\\app\\Views\\fase2.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('fase2', [], true)
+ 5 APPPATH\Controllers\Fases.php(21): view('fase2')
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Fases->fase2()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Fases))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
